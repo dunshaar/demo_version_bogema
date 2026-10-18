@@ -1,0 +1,67 @@
+/* Local ensemble selector. Original photographs are displayed without retouching. */
+#formats .ensemble-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;margin-bottom:38px}
+#formats .ensemble-heading .eyebrow{display:block;margin-bottom:24px}
+#formats .ensemble-heading h2{font-size:clamp(38px,4.5vw,64px);line-height:1.08}
+#formats .ensemble-heading h2 span{display:block;color:var(--gold)}
+#formats .ensemble-heading>p{max-width:340px;padding-bottom:5px;font-size:14px;color:#b0b1a7;line-height:1.7}
+#formats .ensemble-selector{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line);gap:8px;padding:12px 0}
+#formats .ensemble-choice{min-width:0;display:flex;align-items:center;justify-content:center;gap:12px;padding:15px 12px;border:1px solid transparent;border-radius:3px;background:transparent;color:var(--ink);transition:background .2s,color .2s,border-color .2s}
+#formats .ensemble-choice span{font-size:25px;font-weight:400;line-height:1}
+#formats .ensemble-choice strong{font-size:12px;line-height:1.3;font-weight:500}
+#formats .ensemble-choice[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+#formats .ensemble-choice:not([aria-pressed=true]):hover{border-color:var(--line);background:#ffffff07}
+#formats .ensemble-summary{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:26px 0 28px;min-height:64px}
+#formats .ensemble-summary h3{font-size:22px;line-height:1.35;margin:0 0 6px;font-weight:500}
+#formats .ensemble-summary p{font-size:13px;color:#b0b1a7;line-height:1.6;max-width:720px}
+#formats #ensemble-count{font-size:12px;white-space:nowrap;color:var(--gold)}
+#formats .ensemble-stage{display:flex;justify-content:center;align-items:flex-start;gap:12px;min-height:480px;isolation:isolate}
+#formats .ensemble-person{flex:1 1 0;min-width:0;max-width:360px;margin:0}
+#formats .ensemble-person[hidden]{display:none}
+#formats .ensemble-image{position:relative;height:420px;overflow:hidden;background:#181a17}
+#formats .ensemble-image img{width:100%;height:100%;object-fit:cover;object-position:50% 38%;max-width:none}
+#formats [data-member=guitar] img{object-position:60% 50%}
+#formats [data-member=vocal] img{object-position:51% 38%}
+#formats [data-member=drums] img{object-position:48% 38%}
+#formats [data-member=bass] img{object-position:48% 38%}
+#formats [data-member=sax] img{object-position:54% 35%}
+#formats .ensemble-person figcaption{padding:16px 0 0;line-height:1.35}
+#formats .ensemble-role{display:block;font-size:13px;color:var(--ink)}
+#formats .ensemble-role-detail{display:block;font-size:11px;color:var(--muted);margin-top:4px}
+#formats .ensemble-keys .ensemble-image{display:grid;place-items:center}
+#formats .ensemble-key-light{position:absolute;width:300px;aspect-ratio:1;border:1px solid #c6b79b38;border-radius:50%;opacity:.7}
+#formats .ensemble-keyboard{position:absolute;top:47%;left:9%;width:82%;height:66px;display:flex;gap:2px;transform:rotate(-16deg);padding:7px 5px 4px;border:1px solid #c6b79b55;background:#151613;border-radius:3px}
+#formats .ensemble-keyboard i{position:relative;flex:1;background:#d7d4ca;border-radius:0 0 2px 2px}
+#formats .ensemble-keyboard i:not(:nth-child(7n+3)):not(:nth-child(7n)){margin-right:0}
+#formats .ensemble-keyboard i:not(:nth-child(7n+3)):not(:nth-child(7n))::after{content:'';position:absolute;z-index:1;top:0;right:-45%;height:62%;width:70%;background:#151613;border:1px solid #9993}
+#formats .ensemble-key-plus{position:absolute;top:20%;color:var(--gold);font-size:28px;font-weight:300}
+@media(min-width:1400px){#formats .ensemble-image{height:450px}#formats .ensemble-stage{min-height:510px}}
+@media(min-width:810px) and (max-width:1099px){#formats .ensemble-image{height:340px}#formats .ensemble-stage{min-height:400px;gap:8px}#formats .ensemble-choice{gap:8px;padding-inline:6px}#formats .ensemble-choice strong{font-size:11px}#formats .ensemble-role{font-size:11px}}
+@media(max-width:809px){
+ #formats .ensemble-heading{display:block;margin-bottom:28px}
+ #formats .ensemble-heading>p{margin-top:22px;font-size:13px}
+ #formats .ensemble-heading .eyebrow{margin-bottom:20px}
+ #formats .ensemble-selector{gap:5px;padding-block:9px}
+ #formats .ensemble-choice{flex-direction:column;gap:9px;min-height:80px;padding:10px 2px}
+ #formats .ensemble-choice span{font-size:23px}
+ #formats .ensemble-choice strong{font-size:10px;overflow-wrap:anywhere}
+ #formats .ensemble-summary{margin:22px 0;align-items:flex-start;gap:14px}
+ #formats .ensemble-summary h3{font-size:20px}
+ #formats .ensemble-summary p{font-size:12px}
+ #formats #ensemble-count{font-size:11px;padding-top:6px}
+ #formats .ensemble-stage{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px 10px;min-height:0;align-items:start}
+ #formats .ensemble-stage[data-count="1"]{grid-template-columns:minmax(0,360px);justify-content:center}
+ #formats .ensemble-image{height:300px}
+ #formats .ensemble-person{max-width:none;width:100%}
+ #formats .ensemble-person figcaption{padding-top:12px}
+ #formats .ensemble-role{font-size:12px}
+}
+@media(max-width:540px){
+ #formats .ensemble-stage{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 10px}
+ #formats .ensemble-image{height:260px}
+ #formats .ensemble-stage[data-count="1"] .ensemble-image{height:360px}
+ #formats .ensemble-choice strong{font-size:10px;letter-spacing:-.02em}
+ #formats .ensemble-summary{min-height:90px}
+}
+@media(prefers-reduced-motion:reduce){#formats .ensemble-choice{transition:none}}
+
+@media(max-width:359px){#formats .ensemble-choice strong{font-size:9px}#formats .ensemble-image{height:230px}}

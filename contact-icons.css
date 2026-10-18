@@ -1,0 +1,11 @@
+/* One quiet row for every contact channel, with accessible names. */
+.home-page .contact-icon{display:block;width:20px;height:20px;flex:none}
+.home-page .header-request{gap:10px}
+.home-page .header-request .contact-icon{width:18px;height:18px}
+.home-page .contact-links{display:flex;align-items:center;justify-content:space-between;gap:3px;width:100%;max-width:348px}
+.home-page .contact-link{display:flex;align-items:center;justify-content:center;flex:1 1 48px;min-width:44px;max-width:48px;min-height:44px;aspect-ratio:1;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--ink);transition:background-color .18s,border-color .18s,color .18s}
+.home-page .contact-link .contact-icon{width:21px;height:21px}
+.home-page .contact-link:hover,.home-page .contact-link:focus-visible{color:var(--bg);background:var(--gold);border-color:var(--gold)}
+.home-page .contact-link:focus-visible{outline-offset:4px}
+@media(max-width:370px){.home-page .header-request{gap:7px}}
+@media(prefers-reduced-motion:reduce){.home-page .contact-link{transition:none}}

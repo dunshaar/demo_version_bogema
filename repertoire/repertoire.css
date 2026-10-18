@@ -1,0 +1,122 @@
+/* Repertoire v9 only; no styles shared with the homepage. */
+@font-face {
+  font-family: 'Manrope';
+  src: url('../assets/fonts/manrope-hero-variable.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* BOGEMA / compact repertoire reference v2. This is a standalone VISUAL
+   AND LAYOUT sample, not the site's production stylesheet. Reuse the site's
+   existing self-hosted Manrope when implementing at /repertoire/. */
+:root {
+  --rep-bg:#F2F2F0;
+  --rep-ink:#151613;
+  --rep-muted:#77736E;
+  --rep-muted-dark:#56564E;
+  --rep-brass:#9A713D;
+  --rep-stroke:rgba(21,22,19,.23);
+  --rep-font:Manrope,Arial,Helvetica,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--rep-bg);color:var(--rep-ink);font-family:var(--rep-font);font-weight:400;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.rep-shell{width:100%;max-width:1570px;margin:0 auto;padding:20px clamp(22px,3.7vw,60px) 56px}
+/* A clear way back precedes the compact page identity. */
+.rep-navigation{
+  display:flex;justify-content:space-between;align-items:center;gap:18px 28px;
+  margin-bottom:23px;font-size:12px;line-height:1.4;
+}
+.rep-identity{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 9px;min-width:0}
+.rep-identity h1,.rep-identity .rep-divider,.rep-identity p{margin:0;color:var(--rep-brass);font:500 13.5px/1.4 var(--rep-font);letter-spacing:0}
+.rep-back{
+  display:inline-flex;flex:none;align-items:center;justify-content:center;gap:10px;
+  min-height:46px;padding:11px 18px;border:1px solid var(--rep-ink);border-radius:6px;
+  background:var(--rep-ink);color:var(--rep-bg);text-decoration:none;white-space:nowrap;
+  font-size:13px;font-weight:500;line-height:1.4;letter-spacing:.01em;
+  transition:background-color .18s ease,border-color .18s ease;
+}
+.rep-back svg{flex:none}
+@media(hover:hover){.rep-back:hover{background:#34362F;border-color:#34362F}}
+.rep-back:active{background:var(--rep-muted-dark);border-color:var(--rep-muted-dark)}
+/* Do not reintroduce the oversized second "РЕПЕРТУАР" title. */
+.rep-section{margin:0 0 54px;min-width:0}
+.rep-section-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px 28px;margin-bottom:15px}
+.rep-section h2{font-size:clamp(25px,2.35vw,37px);line-height:1.16;letter-spacing:-.045em;font-weight:400;margin:0;text-transform:uppercase}
+.rep-section-index{color:var(--rep-brass);font-size:15px;letter-spacing:.015em;line-height:1.3;white-space:nowrap}
+.rep-rule{height:1px;width:100%;background:var(--rep-stroke);margin:0 0 18px}
+/* One independent column layout PER SECTION. No manual columns and no
+   cross-section spilling. Normal DOM reading order flows top-to-bottom. */
+.rep-songs{
+  column-count:4;
+  column-gap:18px;
+  column-fill:balance;
+  width:100%;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.rep-song{
+  display:block;
+  break-inside:avoid;
+  page-break-inside:avoid;
+  margin:0 0 6px;
+  padding:0;
+  min-width:0;
+  max-width:100%;
+  overflow-wrap:break-word;
+}
+.rep-song-title{
+  display:block;
+  color:var(--rep-ink);
+  font-size:15.5px;
+  font-weight:500;
+  letter-spacing:-.018em;
+  line-height:1.2;
+}
+.rep-song-artist{
+  display:block;
+  margin-top:1px;
+  color:var(--rep-muted);
+  font-size:11.5px;
+  font-weight:400;
+  letter-spacing:.018em;
+  line-height:1.2;
+}
+/* Optional tertiary context line, never a replacement of canonical title. */
+.rep-song-note{
+ display:block;margin-top:1px;color:var(--rep-muted);font-size:10.5px;
+ line-height:1.2;letter-spacing:0;
+}
+.rep-section:last-child{margin-bottom:0}
+a:focus-visible{outline:2px solid var(--rep-brass);outline-offset:4px}
+/* Responsive widths: column count is controlled by media query, not by column-gap. */
+@media(max-width:1279px){
+  .rep-songs{column-count:3;column-gap:16px}
+  .rep-shell{padding-inline:clamp(20px,3vw,46px)}
+}
+@media(max-width:899px){
+  .rep-songs{column-count:2;column-gap:12px}
+  .rep-section{margin-bottom:43px}
+  .rep-section-head{margin-bottom:13px}
+  .rep-rule{margin-bottom:16px}
+}
+@media(max-width:639px){
+  .rep-navigation{flex-direction:column;align-items:flex-start;gap:18px}
+}
+@media(max-width:479px){
+  .rep-shell{padding:14px 18px 44px}
+  .rep-navigation{margin-bottom:20px;align-items:flex-start}
+  .rep-identity{gap:2px 6px}
+  .rep-section{margin-bottom:38px}
+  .rep-section h2{font-size:clamp(23px,6.3vw,30px)}
+  .rep-section-index{font-size:12px}
+  .rep-songs{column-count:1}
+  .rep-song-title{font-size:15px}
+  .rep-song-artist{font-size:11.5px}
+  .rep-song{margin-bottom:6px}
+  .rep-rule{margin-bottom:15px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rep-back{transition:none}}
