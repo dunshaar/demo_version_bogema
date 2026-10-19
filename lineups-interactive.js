@@ -13,9 +13,35 @@
     full: {name:'Полный состав', description:'Мужской и женский вокал, гитара, саксофон, бас, барабаны', members:['guitar','vocal','drums','bass','sax']},
     extended: {name:'Расширенный состав', description:'Мужской и женский вокал, гитара, саксофон, клавишные, бас, барабаны', members:['guitar','vocal','drums','bass','sax','keys']}
   };
+  const mobileLayout = matchMedia('(max-width:809px), (max-width:1023px) and (max-height:500px)');
+  const selector = section.querySelector('.ensemble-selector');
+  function warmPortraits() {
+    if (!mobileLayout.matches) return;
+    // Fetch the real portraits before a hidden musician is added to the stage.
+    for (const image of stage.querySelectorAll('img')) image.loading = 'eager';
+  }
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      if (mobileLayout.matches && entries.some(entry => entry.isIntersecting)) {
+        warmPortraits();observer.disconnect();
+      }
+    }, {rootMargin:'400px 0px'});
+    observer.observe(section);
+  } else warmPortraits();
+  function revealCompleteLineup() {
+    if (!mobileLayout.matches) return;
+    const header = document.querySelector('.site-header');
+    const pinned = header && ['sticky','fixed'].includes(getComputedStyle(header).position);
+    const inset = (pinned ? Math.max(0,header.getBoundingClientRect().bottom) : 0) + 12;
+    const controls = selector.getBoundingClientRect();
+    if (controls.top >= inset && stage.getBoundingClientRect().bottom <= innerHeight - 12) return;
+    window.scrollTo({top:Math.max(0,scrollY + controls.top - inset),behavior:motion.matches ? 'auto' : 'smooth'});
+  }
   let selected = 'trio';
   function select(key) {
-    if (!sets[key] || key === selected) return;
+    if (!sets[key]) return;
+    warmPortraits();
+    if (key === selected) { revealCompleteLineup();return; }
     const before = new Map();
     for (const card of portraits) {
       card.getAnimations().forEach(animation => animation.cancel());
@@ -42,6 +68,7 @@
       }
     }
     window.dispatchEvent(new Event('bogema:layout'));
+    revealCompleteLineup();
   }
   buttons.forEach((button,index) => {
     button.addEventListener('click', () => select(button.dataset.ensemble));
