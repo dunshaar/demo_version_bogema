@@ -44,3 +44,12 @@
 @font-face { font-family: "Manrope"; src: url("manrope-400-8.woff2"); font-display: swap; font-style: normal; font-weight: 400 }
 @font-face { font-family: "Manrope"; src: url("manrope-800-9.woff2"); font-display: swap; font-style: normal; font-weight: 800 }
 @font-face { font-family: "Manrope"; src: url("manrope-600-10.woff2"); font-display: swap; font-style: normal; font-weight: 600 }
+
+/* The same light Manrope face as the homepage wordmark; full Cyrillic/Latin. */
+@font-face {
+  font-family: "Manrope";
+  src: url("manrope-hero-variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200 300;
+  font-display: swap;
+}

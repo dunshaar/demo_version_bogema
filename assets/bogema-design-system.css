@@ -1,0 +1,438 @@
+/* BOGEMA design system, stage 1.
+ * Canonical source: demo_version_bogema/assets/bogema-design-system.css.
+ * The client tool receives an identical copy via tools/sync-design-system.py.
+ * Load after page styles. Page layout and all behavior stay in their own files.
+ */
+:root {
+  --b-font: Manrope, Arial, Helvetica, sans-serif;
+  --b-font-brand: "Manrope Hero", Manrope, Arial, sans-serif;
+  --b-font-editorial: Spectral, Georgia, serif;
+  --b-weight-regular: 400;
+  --b-weight-medium: 500;
+  --b-weight-button: 600;
+  --b-weight-strong: 700;
+  --b-dark: #101110;
+  --b-dark-hero: #151613;
+  --b-dark-surface: #1b1d19;
+  --b-light: #f0ece2;
+  --b-light-surface: #e7e2d7;
+  --b-dark-text: #f0ece2;
+  --b-light-text: #101110;
+  --b-dark-muted: #a8a89c;
+  --b-light-muted: #625f57;
+  --b-dark-line: #4c4e45;
+  --b-light-line: #bdb8ad;
+  --b-dark-accent: #c6b79b;
+  --b-light-accent: #786747;
+  --b-dark-error: #ecaaa0;
+  --b-light-error: #824b44;
+  --b-skip-fill: #824b44;
+  --b-dark-hover: #d8cbb6;
+  --b-light-hover: #34362f;
+  --b-text-body: 16px;
+  --b-text-small: 14px;
+  --b-text-caption: 12px;
+  --b-text-micro: 11px;
+  --b-text-button: 13px;
+  --b-text-song: 16px;
+  --b-text-artist: 12px;
+  --b-text-page: clamp(40px, 5.2vw, 72px);
+  --b-text-section: clamp(36px, 4.45vw, 64px);
+  --b-text-catalog-section: clamp(24px, 2.35vw, 36px);
+  --b-text-workspace-section: 24px;
+  --b-text-editorial: clamp(28px, 2.25vw, 32px);
+  --b-leading-tight: 1.15;
+  --b-leading-title: 1.3;
+  --b-leading-ui: 1.4;
+  --b-leading-body: 1.6;
+  --b-leading-song: 1.25;
+  --b-tracking-heading: -.035em;
+  --b-tracking-body: -.02em;
+  --b-tracking-song: -.018em;
+  --b-tracking-label: .1em;
+  --b-space-1: 4px;
+  --b-space-2: 8px;
+  --b-space-3: 12px;
+  --b-space-4: 16px;
+  --b-space-5: 20px;
+  --b-space-6: 24px;
+  --b-space-8: 32px;
+  --b-space-10: 40px;
+  --b-space-12: 48px;
+  --b-space-16: 64px;
+  --b-container: 1440px;
+  --b-hero-container: 1536px;
+  --b-gutter: 48px;
+  --b-control: 48px;
+  --b-control-compact: 44px;
+  --b-field: 52px;
+  --b-radius-control: 999px;
+  --b-radius-surface: 12px;
+  --b-radius-field: 0px;
+  --b-icon: 20px;
+  --b-icon-small: 18px;
+  --b-line-width: 1px;
+  --b-focus-width: 2px;
+  --b-focus-offset: 3px;
+  --b-transition: 180ms ease;
+}
+[data-bogema-theme="dark"] {
+  --b-bg: var(--b-dark);
+  --b-surface: var(--b-dark-surface);
+  --b-text: var(--b-dark-text);
+  --b-muted: var(--b-dark-muted);
+  --b-line: var(--b-dark-line);
+  --b-accent: var(--b-dark-accent);
+  --b-error: var(--b-dark-error);
+  --b-primary: var(--b-light);
+  --b-on-primary: var(--b-dark);
+  --b-primary-hover: var(--b-dark-hover);
+  color-scheme: dark;
+}
+[data-bogema-theme="light"], .home-page .repertoire-teaser {
+  --b-bg: var(--b-light);
+  --b-surface: var(--b-light-surface);
+  --b-text: var(--b-light-text);
+  --b-muted: var(--b-light-muted);
+  --b-line: var(--b-light-line);
+  --b-accent: var(--b-light-accent);
+  --b-error: var(--b-light-error);
+  --b-primary: var(--b-dark);
+  --b-on-primary: var(--b-light);
+  --b-primary-hover: var(--b-light-hover);
+  color-scheme: light;
+}
+/* Bridge the old page variables to one set of theme tokens. */
+[data-bogema-theme], .home-page .repertoire-teaser {
+  --bg: var(--b-bg);
+  --surface: var(--b-surface);
+  --ink: var(--b-text);
+  --muted: var(--b-muted);
+  --gold: var(--b-accent);
+  --line: var(--b-line);
+  --pad: var(--b-gutter);
+  --rep-bg: var(--b-bg);
+  --rep-ink: var(--b-text);
+  --rep-muted: var(--b-muted);
+  --rep-muted-dark: var(--b-muted);
+  --rep-brass: var(--b-accent);
+  --rep-gold: var(--b-accent);
+  --rep-line: var(--b-line);
+  --rep-stroke: var(--b-line);
+  --rep-font: var(--b-font);
+}
+body[data-bogema-theme] {
+  background: var(--b-bg);
+  color: var(--b-text);
+  font-family: var(--b-font);
+  font-weight: var(--b-weight-regular);
+  font-synthesis: none;
+  font-size: var(--b-text-body);
+  line-height: var(--b-leading-body);
+  letter-spacing: var(--b-tracking-body);
+}
+[data-bogema-theme] ::selection { background: var(--b-accent); color: var(--b-bg); }
+.home-page .wrap:not(.hero), .catalog-page .rep-shell, .repertoire-page .wrap {
+  max-width: var(--b-container);
+  padding-inline: var(--b-gutter);
+}
+/* Shared typography: the giant hero wordmark keeps its existing art direction. */
+.home-page .eyebrow, .repertoire-page .rep-eyebrow,
+.repertoire-page .rep-list-heading > span {
+  font-family: var(--b-font);
+  font-size: var(--b-text-micro);
+  font-weight: var(--b-weight-medium);
+  line-height: var(--b-leading-ui);
+  letter-spacing: var(--b-tracking-label);
+  color: var(--b-muted);
+}
+.home-page .serif-accent, .home-page .repertoire-center h2 span,
+.repertoire-page .rep-guide-heading h2 {
+  font-family: var(--b-font-editorial);
+  font-style: italic;
+  font-weight: var(--b-weight-regular);
+}
+.repertoire-page .rep-intro h1 {
+  font-size: var(--b-text-page);
+  font-weight: var(--b-weight-medium);
+  line-height: var(--b-leading-tight);
+  letter-spacing: var(--b-tracking-heading);
+}
+.catalog-page .rep-section h2 {
+  font-size: var(--b-text-catalog-section);
+  line-height: var(--b-leading-tight);
+  letter-spacing: var(--b-tracking-heading);
+}
+.repertoire-page .rep-list-heading h2 {
+  font-size: var(--b-text-workspace-section);
+  line-height: var(--b-leading-title);
+  letter-spacing: var(--b-tracking-heading);
+}
+.repertoire-page .rep-guide-heading h2 { font-size: var(--b-text-editorial); }
+.catalog-page .rep-song-title, .repertoire-page .rep-song-info h3 {
+  font-family: var(--b-font);
+  font-size: var(--b-text-song);
+  font-weight: var(--b-weight-medium);
+  line-height: var(--b-leading-song);
+  letter-spacing: var(--b-tracking-song);
+  color: var(--b-text);
+}
+.catalog-page .rep-song-artist, .repertoire-page .rep-song-artist,
+.catalog-page .rep-song-note {
+  font-family: var(--b-font);
+  font-size: var(--b-text-artist);
+  font-weight: var(--b-weight-regular);
+  line-height: var(--b-leading-title);
+  letter-spacing: 0;
+  color: var(--b-muted);
+}
+.repertoire-page .rep-song-number { color: var(--b-muted); }
+.repertoire-page .rep-song-row[data-status="want"] h3 { font-weight: var(--b-weight-strong); }
+.repertoire-page .rep-song-row[data-status="skip"] h3,
+.repertoire-page .rep-song-row[data-status="skip"] .rep-song-artist { color: var(--b-error); }
+/* Shared geometry, primary and secondary variants. No video-control selectors. */
+.home-page .button, .home-page .desktop-hero-nav a,
+.catalog-page .rep-back, .repertoire-page .rep-primary, .repertoire-page .rep-secondary,
+[data-bogema-theme] .bf-primary, [data-bogema-theme] .bf-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--b-space-3);
+  min-height: var(--b-control);
+  max-width: 100%;
+  padding: 12px var(--b-space-6);
+  border: var(--b-line-width) solid var(--b-line);
+  border-radius: var(--b-radius-control);
+  background: transparent;
+  color: var(--b-text);
+  font-family: var(--b-font);
+  font-size: var(--b-text-button);
+  font-weight: var(--b-weight-button);
+  line-height: var(--b-leading-ui);
+  letter-spacing: 0;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: none;
+  transition: background-color var(--b-transition), color var(--b-transition), border-color var(--b-transition);
+}
+.home-page .button-fill, .home-page .header-request, .home-page .desktop-hero-nav a,
+.repertoire-page .rep-primary, [data-bogema-theme] .bf-primary {
+  background: var(--b-primary);
+  border-color: var(--b-primary);
+  color: var(--b-on-primary);
+}
+.home-page .button:hover, .catalog-page .rep-back:hover,
+.repertoire-page .rep-secondary:not(:disabled):hover, [data-bogema-theme] .bf-secondary:not(:disabled):hover {
+  background: var(--b-surface);
+  border-color: var(--b-text);
+  color: var(--b-text);
+}
+.home-page .button-fill:hover, .home-page .header-request:hover, .home-page .desktop-hero-nav a:hover,
+.repertoire-page .rep-primary:hover, [data-bogema-theme] .bf-primary:not(:disabled):hover {
+  background: var(--b-primary-hover);
+  border-color: var(--b-primary-hover);
+  color: var(--b-on-primary);
+}
+.home-page .button:active, .home-page .desktop-hero-nav a:active,
+.catalog-page .rep-back:active, .repertoire-page .rep-primary:active,
+.repertoire-page .rep-secondary:active, [data-bogema-theme] .bf-primary:active {
+  box-shadow: inset 0 0 0 2px var(--b-accent);
+}
+[data-bogema-theme] .bf-primary::after { display: none; }
+[data-bogema-theme] .bf-primary:disabled, [data-bogema-theme] .bf-secondary:disabled,
+.repertoire-page .rep-secondary:disabled, .repertoire-page .rep-text-button:disabled {
+  opacity: .5;
+  cursor: default;
+}
+/* Keep the already agreed visually active client demo button, without enabling delivery. */
+.repertoire-page .bf-form[data-state="draft"][data-delivery-enabled="false"] .bf-primary:disabled {
+  opacity: 1;
+}
+.repertoire-page .bf-form[data-state="draft"][data-delivery-enabled="false"] .bf-primary:disabled:hover {
+  background: var(--b-primary-hover);
+  border-color: var(--b-primary-hover);
+}
+.home-page .button > svg, .catalog-page .rep-back svg,
+.repertoire-page .rep-primary svg, .repertoire-page .rep-secondary svg {
+  width: var(--b-icon);
+  height: var(--b-icon);
+  flex: none;
+}
+/* Visible keyboard focus, scoped to the three interfaces. */
+[data-bogema-theme] :where(a,button,summary,input,select,textarea,[tabindex]):focus-visible {
+  outline: var(--b-focus-width) solid var(--b-accent);
+  outline-offset: var(--b-focus-offset);
+}
+.home-page .menu-button { min-height: var(--b-control-compact); }
+.home-page .contact-link { border-color: var(--b-line); }
+.home-page .contact-link .contact-icon { width: var(--b-icon); height: var(--b-icon); }
+.home-page .site-nav a, .home-page .menu-dialog a { min-height: var(--b-control-compact); }
+/* Underlined fields are shared with the existing homepage, including labels. */
+[data-bogema-theme] .bf-field label, .repertoire-page .rep-search > label {
+  font: var(--b-weight-medium) var(--b-text-caption)/var(--b-leading-ui) var(--b-font);
+  letter-spacing: var(--b-tracking-label);
+  text-transform: uppercase;
+  color: var(--b-muted);
+  margin-bottom: var(--b-space-2);
+}
+[data-bogema-theme] .bf-optional {
+  font-size: var(--b-text-caption);
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--b-muted);
+}
+[data-bogema-theme] .bf-fields { gap: var(--b-space-6); }
+[data-bogema-theme] .bf-field input, [data-bogema-theme] .bf-field select {
+  min-height: var(--b-field);
+  padding: var(--b-space-3) 0;
+  border: 0;
+  border-bottom: var(--b-line-width) solid var(--b-muted);
+  border-radius: var(--b-radius-field);
+  background: transparent;
+  color: var(--b-text);
+  font: var(--b-weight-regular) var(--b-text-body)/var(--b-leading-ui) var(--b-font);
+}
+[data-bogema-theme] .bf-field input::placeholder,
+.repertoire-page .rep-search input::placeholder { color: var(--b-muted); opacity: 1; }
+[data-bogema-theme] .bf-field input:hover, [data-bogema-theme] .bf-field select:hover {
+  background: transparent;
+  border-color: var(--b-text);
+}
+[data-bogema-theme] .bf-field input:focus-visible, [data-bogema-theme] .bf-field select:focus-visible {
+  outline: 0;
+  box-shadow: 0 2px 0 var(--b-accent);
+  border-color: var(--b-accent);
+}
+[data-bogema-theme] .bf-field [aria-invalid="true"] { border-color: var(--b-error); }
+[data-bogema-theme] .bf-field-error, [data-bogema-theme] .bf-storage-warning { color: var(--b-error); }
+[data-bogema-theme] .bf-status { color: var(--b-accent); font-size: var(--b-text-small); }
+[data-bogema-theme] .bf-consent {
+  border: 0;
+  padding: 0;
+  margin-top: var(--b-space-6);
+}
+[data-bogema-theme] .bf-consent .bf-check {
+  gap: var(--b-space-3);
+  color: var(--b-muted);
+  font-size: var(--b-text-caption);
+  line-height: var(--b-leading-body);
+  min-height: var(--b-control-compact);
+}
+[data-bogema-theme] .bf-consent input {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  accent-color: var(--b-accent);
+}
+[data-bogema-theme] .bf-text-button, .repertoire-page .rep-text-button {
+  color: var(--b-accent);
+  font-size: var(--b-text-button);
+  font-family: var(--b-font);
+  min-height: var(--b-control-compact);
+  text-decoration: underline;
+  text-decoration-thickness: var(--b-line-width);
+  text-underline-offset: 4px;
+}
+[data-bogema-theme] .bf-text-button:hover, .repertoire-page .rep-text-button:hover {
+  color: var(--b-text);
+}
+/* Homepage integration: composition and the special hero/ribbon scale stay intact. */
+.home-page .repertoire-teaser { background: var(--b-bg); color: var(--b-text); }
+.home-page .repertoire-center .teaser-description,
+.home-page .repertoire-ribbon-song > span { color: var(--b-muted); }
+.home-page .repertoire-ribbon { border-color: var(--b-line); }
+.home-page .repertoire-center .repertoire-option { min-height: var(--b-control); }
+.home-page .details-lead, .home-page .performance-details p,
+.home-page .contact-addresses, .home-page .live-summary-note,
+.home-page #formats .ensemble-heading > p, .home-page #formats .ensemble-summary p {
+  color: var(--b-muted);
+}
+.home-page #formats .ensemble-choice { border-radius: var(--b-radius-control); }
+.home-page .bf-confirmation h3 { font-family: var(--b-font-editorial); }
+/* Public catalog: six independent compact sections; no selection UI. */
+.catalog-page .rep-navigation { margin-bottom: var(--b-space-6); }
+.catalog-page .rep-identity :is(h1,p,.rep-divider) { color: var(--b-accent); }
+.catalog-page .rep-section-index { color: var(--b-accent); }
+.catalog-page .rep-section { margin-bottom: var(--b-space-12); }
+.catalog-page .rep-section:last-child { margin-bottom: 0; }
+.catalog-page .rep-section-head { margin-bottom: var(--b-space-4); }
+.catalog-page .rep-rule { margin-bottom: var(--b-space-4); background: var(--b-line); }
+.catalog-page .rep-song { margin-bottom: var(--b-space-2); }
+.catalog-page .rep-song-artist { margin-top: 2px; }
+/* Selection tool: same surfaces and type, compact functional controls remain. */
+.repertoire-page main { background: var(--b-bg); }
+.repertoire-page .rep-companion, .repertoire-page .rep-action-dialog {
+  background: var(--b-surface);
+  color: var(--b-text);
+  border-color: var(--b-line);
+  border-radius: var(--b-radius-surface);
+}
+.repertoire-page .rep-companion { box-shadow: none; }
+.repertoire-page .rep-guide, .repertoire-page .rep-song-list,
+.repertoire-page .rep-song-row, .repertoire-page .rep-request,
+.repertoire-page .rep-counts > div { border-color: var(--b-line); }
+.repertoire-page .rep-count-skip dd, .repertoire-page .rep-guide-skip .rep-guide-symbol { color: var(--b-error); }
+.repertoire-page .rep-count-want dt::before { background: var(--b-text); }
+.repertoire-page .rep-count-maybe dt::before { background: var(--b-muted); }
+.repertoire-page .rep-count-skip dt::before { background: var(--b-error); }
+.repertoire-page .rep-search-field {
+  min-height: var(--b-field);
+  padding: 0;
+  border: 0;
+  border-bottom: var(--b-line-width) solid var(--b-muted);
+  border-radius: var(--b-radius-field);
+  background: transparent;
+}
+.repertoire-page .rep-search-field:focus-within {
+  box-shadow: 0 2px 0 var(--b-accent);
+  border-color: var(--b-accent);
+}
+.repertoire-page .rep-search input:focus-visible { outline: 0; }
+.repertoire-page .rep-search button {
+  width: var(--b-control-compact);
+  min-width: var(--b-control-compact);
+  height: var(--b-control-compact);
+  margin-right: 0;
+}
+.repertoire-page .rep-search-field > svg, .repertoire-page .rep-search button svg {
+  width: var(--b-icon);
+  height: var(--b-icon);
+  color: var(--b-muted);
+}
+.repertoire-page .rep-song-choices label > span {
+  min-height: var(--b-control-compact);
+  border-radius: var(--b-radius-control);
+  color: var(--b-muted);
+  font-family: var(--b-font);
+  font-size: var(--b-text-caption);
+  font-weight: var(--b-weight-medium);
+}
+.repertoire-page .rep-song-choices label:hover > span { background: var(--b-surface); color: var(--b-text); }
+.repertoire-page .rep-song-choices input:checked + span { background: var(--b-primary); color: var(--b-on-primary); border-color: var(--b-primary); }
+.repertoire-page .rep-song-choices input[value="maybe"]:checked + span { background: var(--b-surface); color: var(--b-text); border-color: var(--b-muted); }
+.repertoire-page .rep-song-choices input[value="skip"]:checked + span { background: var(--b-skip-fill); color: var(--b-light); border-color: var(--b-skip-fill); }
+.repertoire-page .rep-song-choices input:focus-visible { outline: 0; }
+.repertoire-page .rep-song-choices input:focus-visible + span {
+  outline: var(--b-focus-width) solid var(--b-accent);
+  outline-offset: -2px;
+  box-shadow: inset 0 0 0 4px var(--b-bg);
+}
+.repertoire-page .rep-send-link { padding-inline: var(--b-space-3); gap: var(--b-space-2); font-size: var(--b-text-caption); }
+.repertoire-page .rep-send-link svg, .repertoire-page .rep-reset-icon { width: var(--b-icon-small); height: var(--b-icon-small); }
+.repertoire-page .rep-action-dialog h2 { font-size: var(--b-text-workspace-section); }
+.repertoire-page .bf-field select option { background: var(--b-bg); color: var(--b-text); }
+@media(max-width:1199px) { :root { --b-gutter: 32px; } }
+@media(max-width:809px) {
+  :root { --b-gutter: 20px; }
+  .home-page .header-request { min-height: var(--b-control-compact); padding: 10px 12px; font-size: 11px; }
+  .home-page .repertoire-center .repertoire-option { min-height: var(--b-control); }
+  .catalog-page .rep-section { margin-bottom: var(--b-space-10); }
+  .repertoire-page .rep-companion { border-radius: 0 0 var(--b-radius-surface) var(--b-radius-surface); }
+  .repertoire-page .rep-companion .rep-send-link { min-height: var(--b-control-compact); padding: 10px 8px; }
+  .repertoire-page .rep-intro h1 { margin-block: var(--b-space-6) var(--b-space-8); }
+}
+@media(prefers-reduced-motion:reduce) {
+  .home-page .button, .home-page .desktop-hero-nav a, .catalog-page .rep-back,
+  .repertoire-page .rep-primary, .repertoire-page .rep-secondary,
+  [data-bogema-theme] .bf-primary, [data-bogema-theme] .bf-secondary { transition: none; }
+}

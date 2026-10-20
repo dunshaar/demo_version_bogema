@@ -1,24 +1,5 @@
-/* Repertoire v9 only; no styles shared with the homepage. */
-@font-face {
-  font-family: 'Manrope';
-  src: url('../assets/fonts/manrope-hero-variable.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* BOGEMA / compact repertoire reference v2. This is a standalone VISUAL
-   AND LAYOUT sample, not the site's production stylesheet. Reuse the site's
-   existing self-hosted Manrope when implementing at /repertoire/. */
-:root {
-  --rep-bg:#F2F2F0;
-  --rep-ink:#151613;
-  --rep-muted:#77736E;
-  --rep-muted-dark:#56564E;
-  --rep-brass:#9A713D;
-  --rep-stroke:rgba(21,22,19,.23);
-  --rep-font:Manrope,Arial,Helvetica,sans-serif;
-}
+/* Public repertoire layout: six independent compact sections. */
+/* Colors, fonts and component rules: ../assets/bogema-design-system.css */
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--rep-bg);color:var(--rep-ink);font-family:var(--rep-font);font-weight:400;-webkit-font-smoothing:antialiased}
