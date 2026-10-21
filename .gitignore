@@ -4,3 +4,7 @@ node_modules/
 .env
 .env.*
 *.log
+
+# Local working journals and machine-specific audit reports
+docs/bogema-progress.md
+docs/bogema-master-report.md

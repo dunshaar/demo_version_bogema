@@ -1,0 +1,20 @@
+[data-bogema-theme] [hidden] { display:none!important; }
+.b-catalog-tools { margin:0 0 36px; }
+.b-catalog-search { max-width:640px; }
+.b-catalog-search label { display:block;font:500 13px/1.5 var(--b-font);margin-bottom:8px;color:var(--b-muted); }
+.b-search-field { display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--b-line);min-height:52px; }
+.b-search-field:focus-within { border-color:var(--b-text);box-shadow:inset 0 -1px var(--b-text); }
+.b-search-field input { flex:1;min-width:0;width:100%;border:0;background:transparent;color:var(--b-text);padding:14px 0;font:400 16px/1.5 var(--b-font); }
+.b-search-field input:focus-visible { outline:none; }
+.b-search-field input::-webkit-search-cancel-button { display:none; }
+.b-search-field input::placeholder { color:var(--b-muted);opacity:1; }
+.b-search-field button { flex:none;display:grid;place-items:center;width:44px;height:44px;background:transparent;border:0;color:var(--b-text);border-radius:50%;cursor:pointer; }
+.b-search-field button svg { width:18px;height:18px; }
+.b-catalog-status { min-height:22px;margin:8px 0 16px;font:400 13px/1.6 var(--b-font);color:var(--b-muted); }
+.b-category-links { display:flex;flex-wrap:wrap;gap:0 24px; }
+.b-category-links a { display:inline-flex;align-items:center;min-height:44px;color:var(--b-muted);font:500 12px/1.4 var(--b-font);text-decoration:none;text-underline-offset:5px; }
+.b-category-links a:hover { color:var(--b-text);text-decoration:underline; }
+.b-catalog-footer { display:flex;justify-content:flex-start;padding-top:24px;border-top:1px solid var(--b-line); }
+.catalog-page .rep-section { scroll-margin-top:24px; }
+@media(max-width:1279px) { .catalog-page .rep-songs { column-count:2; } }
+@media(max-width:639px) { .catalog-page .rep-songs { column-count:1; }.b-catalog-tools { margin-bottom:28px; }.b-category-links { column-gap:20px; } }

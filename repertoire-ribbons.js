@@ -7,9 +7,9 @@ const at = index => songs[(index % songs.length + songs.length) % songs.length];
 function songNode(index) {
   const song = at(index), node = document.createElement('span');
   node.className = 'repertoire-ribbon-song'; node.dataset.index = index;
-  const title = document.createElement('strong'), artist = document.createElement('span');
-  title.textContent = song.title; artist.textContent = song.artist || '';
-  node.append(title, artist); return node;
+  const title = document.createElement('strong');
+  title.textContent = song.title;
+  node.append(title); return node;
 }
 function build() {
   if (!songs.length) return;

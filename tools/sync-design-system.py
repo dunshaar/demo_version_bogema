@@ -18,7 +18,8 @@ source = Path(__file__).resolve().parents[1]
 target = args.client_root.expanduser().resolve(strict=True)
 if not (target / "index.html").is_file() or not (target / "repertoire.js").is_file():
     parser.error("Expected the existing independent client site's public directory")
-files = ["assets/bogema-design-system.css", "assets/fonts/fonts.css",
+files = ["assets/bogema-catalog-controls.css", "assets/bogema-navigation.css", "assets/logo.svg", "assets/logo-dark.svg",
+         "assets/bogema-design-system.css", "assets/fonts/fonts.css",
          "assets/fonts/manrope-hero-variable.ttf"]
 # The static Manrope/Spectral subsets and their licenses must match as well.
 files += [str(p.relative_to(source)) for p in (source / "assets/fonts").iterdir()

@@ -6,7 +6,7 @@
   const blank=()=>({name:'',phone:'',preferredChannel:'',date:'',consent:false});
   let repertoire=false;
   let draft=blank(),phase='loading',notice='',prepared=null,attempt=null,lastRequestId='';
-  let contract,store,formatPreferences,currentProgramSnapshot,controller,excludeConfirmed='',confirmExclusion=false;
+  let contract,store,currentProgramSnapshot,controller,excludeConfirmed='',confirmExclusion=false;
   let config={mode:'unavailable',enabled:false,endpoint:null,statusEndpoint:null};
   const editable=()=>phase==='draft';
   const frozen=()=>['pending','rejected','catalog_changed','uncertain','partial'].includes(phase);
@@ -32,26 +32,17 @@
   }
   function mount(host){
     repertoire=host.dataset.source==='repertoire';
-    const requestLabel=repertoire?'Отправить пожелания':'Оставить заявку';
-    const submitLabel=repertoire?'Отправить пожелания':'Отправить заявку';
+    const submitLabel=repertoire?'Отправить пожелания':'Связаться со мной';
     const wishesHref='#songs';
-    const form=document.createElement('form');form.className='bf-form';form.noValidate=true;
+    const form=document.createElement('form');form.className='bf-form';form.noValidate=true;form.setAttribute('aria-label',submitLabel);
     form.addEventListener('submit',event=>{event.preventDefault();submit();});
     form.innerHTML=`<div class="bf-root">
-      <h3 class="bf-heading">${requestLabel}</h3>
       <div class="bf-editable-fields">
         <div class="bf-fields">
           <div class="bf-field"><label for="bf-name">Имя</label><input id="bf-name" name="name" type="text" autocomplete="name" required maxlength="80" aria-describedby="bf-name-error"><p class="bf-field-error" id="bf-name-error" data-error="name" hidden></p></div>
           <div class="bf-field"><label for="bf-phone">Телефон</label><input id="bf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="50" placeholder="+7 (___) ___-__-__" aria-describedby="bf-phone-error"><p class="bf-field-error" id="bf-phone-error" data-error="phone" hidden></p></div>
-          ${repertoire?'':`<div class="bf-field"><label for="bf-channel">Как с вами связаться <span class="bf-optional">Необязательно</span></label><select id="bf-channel" name="preferredChannel" aria-describedby="bf-channel-error"><option value="">Выберите способ</option><option value="phone">Звонок</option><option value="telegram">Telegram</option><option value="whatsapp">WhatsApp</option><option value="max">MAX</option></select><p class="bf-field-error" id="bf-channel-error" data-error="preferredChannel" hidden></p></div>
-          <div class="bf-field bf-field-date"><label for="bf-date">Дата мероприятия <span class="bf-optional">Если известна</span></label><input id="bf-date" name="date" type="date" aria-describedby="bf-date-error"><p class="bf-field-error" id="bf-date-error" data-error="date" hidden></p></div>`}
         </div>
-        ${repertoire?`<section class="bf-attachment bf-attachment-required" hidden>
-          <div class="bf-attachment-controls"><span class="bf-attachment-label">Ваши пожелания</span><button type="button" class="bf-secondary bf-preview-selection" aria-expanded="false" aria-controls="bf-selection-preview">Список песен</button></div>
-          <p class="bf-selection-counts"></p><p class="bf-storage-warning" role="status" hidden></p>
-          <div class="bf-selection-preview" id="bf-selection-preview" hidden><pre class="bf-selection-text"></pre><a class="bf-text-button" href="${wishesHref}">Изменить пожелания</a><button type="button" class="bf-text-button bf-close-selection">Свернуть</button></div>
-        </section>
-        <section class="bf-exclusion" tabindex="-1" hidden aria-labelledby="bf-exclusion-heading"><h4 id="bf-exclusion-heading">Некоторые песни больше недоступны</h4><p>Они останутся в сохранённых пожеланиях, но не попадут в заявку<br>Продолжить без них?</p><div class="bf-recovery"><button class="bf-secondary bf-exclude" type="button">Отправить без недоступных</button><a class="bf-text-button" href="${wishesHref}">Вернуться к пожеланиям</a><button class="bf-text-button bf-exclude-cancel" type="button">Назад к форме</button></div></section>`:''}
+        ${repertoire?`<section class="bf-exclusion" tabindex="-1" hidden aria-labelledby="bf-exclusion-heading"><h4 id="bf-exclusion-heading">Некоторые песни больше недоступны</h4><p>Они останутся в сохранённых пожеланиях, но не попадут в заявку<br>Продолжить без них?</p><div class="bf-recovery"><button class="bf-secondary bf-exclude" type="button">Отправить без недоступных</button><a class="bf-text-button" href="${wishesHref}">Вернуться к пожеланиям</a><button class="bf-text-button bf-exclude-cancel" type="button">Назад к форме</button></div></section>`:''}
       </div>
       <div class="bf-consent"><label class="bf-check"><input id="bf-consent" name="consent" type="checkbox" required aria-describedby="bf-consent-error"><span>Я соглашаюсь с политикой конфиденциальности и даю согласие на обработку персональных данных</span></label><p class="bf-field-error" id="bf-consent-error" data-error="consent" hidden></p></div>
       <p class="bf-status" role="status" aria-live="polite" aria-atomic="true"></p>
@@ -63,28 +54,19 @@
     host.replaceChildren(form);
     const fields=Object.fromEntries(['name','phone','preferredChannel','date','consent'].map(name=>[name,form.elements.namedItem(name)]).filter(([,field])=>field));
     controller={form,fields,render(){
-      const snapshot=snap(),locked=!editable(),success=['demo_complete','accepted','delivered'].includes(phase);
-      form.dataset.state=phase;form.dataset.mode=config.mode;
+      const snapshot=snap(),locked=!editable(),success=['accepted','delivered'].includes(phase);
+      form.dataset.state=phase;form.dataset.mode=config.mode;form.dataset.deliveryEnabled=String(config.enabled);
       form.setAttribute('aria-busy',String(phase==='pending'));
+      if(repertoire&&store?.setLocked)store.setLocked(frozen());
       for(const name of Object.keys(fields)){if(name==='consent')fields[name].checked=draft[name];else if(fields[name].value!==draft[name])fields[name].value=draft[name];fields[name].disabled=locked;}
       q('.bf-editable-fields').hidden=success;
       q('.bf-consent').hidden=success;
       if(repertoire){
-        const current=prepared&&frozen()?prepared.records:snapshot.selected;
-        const hasChanges=current.length+snapshot.deprecated.length>0;
-        q('.bf-attachment').hidden=!hasChanges;
-        const want=current.filter(song=>song.status==='want').length,skip=current.filter(song=>song.status==='skip').length;
-        q('.bf-attachment-label').textContent='Музыкальные пожелания';
-        q('.bf-selection-counts').textContent='Хочу: '+want+' · Не надо: '+skip+(snapshot.deprecated.length?' · Недоступно: '+snapshot.deprecated.length:'');
-        q('.bf-storage-warning').hidden=!snapshot.storage?.message;
-        q('.bf-storage-warning').textContent=snapshot.storage?.message||'';
-        q('.bf-preview-selection').disabled=phase==='pending';
-        if(!hasChanges){q('.bf-selection-preview').hidden=true;q('.bf-preview-selection').setAttribute('aria-expanded','false');}
-        q('.bf-selection-text').textContent=formatPreferences?formatPreferences({...snapshot,program:prepared&&frozen()?prepared.program:snapshot.program,selected:current}):'';
         q('.bf-exclusion').hidden=!confirmExclusion||!editable();
       }
-      q('.bf-status').textContent=notice||((phase==='draft'&&config.mode!=='demo'&&!config.enabled)?'Отправка сейчас недоступна, попробуйте ещё раз позже':'');
-      q('.bf-primary').disabled=!editable()||confirmExclusion||(config.mode!=='demo'&&!config.enabled);
+      q('.bf-status').textContent=notice;
+      q('.bf-status').hidden=!notice;
+      q('.bf-primary').disabled=!editable()||confirmExclusion;
       q('.bf-primary').textContent=phase==='pending'?'Отправляем':submitLabel;
       q('.bf-primary').hidden=success||['rejected','catalog_changed','uncertain','partial'].includes(phase);
       q('.bf-retry').hidden=phase!=='rejected'||!attempt?.result.retryable;
@@ -95,19 +77,13 @@
       q('.bf-request-id').hidden=!requestId||config.mode==='demo';
       q('.bf-request-id').textContent=requestId?'Номер заявки: '+requestId:'';
       q('.bf-confirmation').hidden=!success;
-      q('.bf-confirmation-title').textContent=repertoire?(phase==='accepted'?'Пожелания приняты':'Пожелания отправлены'):(phase==='accepted'?'Заявка принята':'Заявка отправлена');
+      q('.bf-confirmation-title').textContent=repertoire?(phase==='accepted'?'Пожелания приняты':'Пожелания отправлены.'):(phase==='accepted'?'Заявка принята':'Заявка отправлена');
     }};
     for(const name of Object.keys(fields)){
       const update=()=>{if(editable()){draft[name]=name==='consent'?fields[name].checked:fields[name].value;error(name);changed();}};
       fields[name].addEventListener('input',update);fields[name].addEventListener('change',update);
     }
     if(repertoire){
-      q('.bf-preview-selection').addEventListener('click',()=>{
-        const panel=q('.bf-selection-preview');panel.hidden=!panel.hidden;q('.bf-preview-selection').setAttribute('aria-expanded',String(!panel.hidden));
-        if(!panel.hidden)q('.bf-close-selection').focus({preventScroll:true});
-      });
-      q('.bf-close-selection').addEventListener('click',closePreview);
-      q('.bf-selection-preview').addEventListener('keydown',event=>{if(event.key==='Escape'){event.preventDefault();closePreview();}});
       q('.bf-exclude').addEventListener('click',()=>{if(!editable()||!confirmExclusion)return;excludeConfirmed=exclusionKey();confirmExclusion=false;submit();});
       q('.bf-exclude-cancel').addEventListener('click',()=>{confirmExclusion=false;excludeConfirmed='';render();fields.name.focus({preventScroll:true});});
       q('.bf-exclusion').addEventListener('keydown',event=>{if(event.key==='Escape'){event.preventDefault();q('.bf-exclude-cancel').click();}});
@@ -121,18 +97,19 @@
       render();focusName();
     });
     q('.bf-new').addEventListener('click',()=>{
-      if(!['demo_complete','accepted','delivered'].includes(phase))return;
+      if(!['accepted','delivered'].includes(phase))return;
       phase='draft';lastRequestId='';notice='';render();focusName();
     });
     render();
   }
-  function closePreview(){q('.bf-selection-preview').hidden=true;q('.bf-preview-selection').setAttribute('aria-expanded','false');q('.bf-preview-selection').focus({preventScroll:true});}
   function submit(){
-    if(!editable()||(config.mode!=='demo'&&!config.enabled))return;
+    if(!editable())return;
     for(const name of Object.keys(draft))error(name);
     const checked=contract.validateContact(draft,controller.fields.date?.validity.valid??true);
     if(checked.errors.length){for(const [name,message]of checked.errors)error(name,message);notice='Проверьте выделенные поля';render();controller.fields[checked.errors[0][0]].focus();return;}
-    if(repertoire&&!snap().selected.length){notice='Отметьте хотя бы одну песню как «Хочу» или «Не надо», затем отправьте пожелания';render();q('.bf-status').scrollIntoView({block:'center',behavior:'auto'});return;}
+    if(repertoire&&!snap().selected.length){notice='Пока ничего не отмечено. Выберите важные для вас песни перед отправкой пожеланий.';render();q('.bf-status').scrollIntoView({block:'center',behavior:'auto'});return;}
+    if(!config.enabled){notice='Отправка пока не подключена. Данные не отправлены.';render();return;}
+    if(repertoire&&snap().selected.some(song=>song.status==='maybe')){notice='Отправка отметок «Можно» ещё не подключена. Выбор остаётся на этой странице.';render();return;}
     if(repertoire&&snap().deprecated.length&&excludeConfirmed!==exclusionKey()){
       confirmExclusion=true;notice='';render();q('.bf-exclusion').focus({preventScroll:true});return;
     }
@@ -151,10 +128,7 @@
     if(checking&&!['uncertain','partial'].includes(phase))return;
     if(!checking&&!['draft','rejected'].includes(phase))return;
     if(config.mode==='demo'){
-      if(!prepared)return;
-      phase='pending';notice='';render();
-      // Requested local demonstration: deliberately no network delivery.
-      await new Promise(resolve=>setTimeout(resolve,450));completed('demo_complete');return;
+      phase='draft';notice='Отправка пока не подключена';render();return;
     }
     if(!attempt)return;
     phase='pending';notice=checking?'Проверяем результат заявки':'';render();
@@ -170,7 +144,7 @@
     render();
   }
   window.bogemaForms=Object.freeze({get mode(){return config.mode;},refresh:render});
-  window.addEventListener('pageshow',event=>{if(event.persisted&&editable()){draft=blank();confirmExclusion=false;excludeConfirmed='';render();}});
+  // Browser back restores the in-memory draft; personal details are never persisted.
   window.addEventListener('beforeunload',event=>{if(config.mode!=='demo'&&['pending','uncertain','partial'].includes(phase)){event.preventDefault();event.returnValue='';}});
   async function start(){
     const host=document.querySelector('[data-request-form]');if(!host)return;
@@ -179,11 +153,10 @@
       const modules=await Promise.all([import(new URL('request-contract.mjs?v=20261014-unified1',scriptURL).href),import(new URL('phone-input.mjs',scriptURL).href)]);
       contract=modules[0];config=await loadConfig();modules[1].attachPhoneMask(controller.fields.phone);controller.form.dataset.phoneMask='ready';
       if(repertoire){
-        const preferences=await import(new URL('preferences-store.mjs?v=20261014-unified1',scriptURL).href);
-        store=preferences.preferencesStore;formatPreferences=preferences.formatPreferences;currentProgramSnapshot=preferences.currentProgramSnapshot;
+        const preferences=await import(new URL('preferences-store.mjs?v=20261021-master',scriptURL).href);
+        store=preferences.preferencesStore;currentProgramSnapshot=preferences.currentProgramSnapshot;
         store.subscribe(()=>{
           if(editable()){
-            if(!snap().selected.length&&!snap().deprecated.length&&q('.bf-attachment').contains(document.activeElement))q('.bf-primary').focus({preventScroll:true});
             confirmExclusion=false;excludeConfirmed='';prepared=null;
           }
           render();

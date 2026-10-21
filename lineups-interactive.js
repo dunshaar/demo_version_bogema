@@ -41,6 +41,11 @@
   function select(key) {
     if (!sets[key]) return;
     warmPortraits();
+    const active = buttons.find(button => button.dataset.ensemble === key);
+    if (selector.scrollWidth > selector.clientWidth) {
+      const left = active.offsetLeft - selector.offsetLeft;
+      selector.scrollTo({left:Math.max(0,Math.min(left, left + active.offsetWidth - selector.clientWidth)),behavior:'instant'});
+    }
     if (key === selected) { revealCompleteLineup();return; }
     const before = new Map();
     for (const card of portraits) {

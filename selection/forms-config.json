@@ -1,0 +1,6 @@
+{
+  "mode": "endpoint",
+  "enabled": false,
+  "endpoint": null,
+  "statusEndpoint": null
+}

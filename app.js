@@ -19,74 +19,52 @@ for (const dialog of dialogs) {
     if (trigger?.isConnected) trigger.focus({ preventScroll: true });
   });
 }
-const menu = document.querySelector('#menu-dialog');
-const menuButton = document.querySelector('.menu-button');
-// Section links use one bounded animation; native focus must never start another.
+// No header on the homepage; keep room above anchor targets.
+document.body.style.setProperty('--b-navigation-inset', '24px');
+// Section links use one bounded animation; reduced motion is immediate.
 document.documentElement.style.scrollBehavior = 'auto';
 let navigationFrame = 0;
 function cancelSectionNavigation() {
   cancelAnimationFrame(navigationFrame);
   navigationFrame = 0;
 }
-function closeMenu(restoreFocus = false) {
-  menu.hidden = true;
-  menuButton.setAttribute('aria-expanded', 'false');
-  if (restoreFocus) menuButton.focus({preventScroll:true});
-}
-menuButton.addEventListener('click', () => {
-  if (!menu.hidden) { closeMenu(true); return; }
-  cancelSectionNavigation();
-  menu.style.setProperty('--menu-top', `${Math.ceil(document.querySelector('.site-header').getBoundingClientRect().bottom)}px`);
-  menu.hidden = false;
-  menuButton.setAttribute('aria-expanded', 'true');
-  menu.querySelector('nav a').focus({preventScroll:true});
-});
-menu.querySelector('[data-close]').addEventListener('click', () => closeMenu(true));
-document.addEventListener('pointerdown', event => {
-  if (!menu.hidden && !menu.contains(event.target) && !menuButton.contains(event.target)) closeMenu();
-});
-document.addEventListener('keydown', event => {
-  if (event.key === 'Escape' && !menu.hidden) { event.preventDefault(); closeMenu(true); }
-});
-menu.addEventListener('focusout', () => {
-  requestAnimationFrame(() => {
-    if (!menu.hidden && !menu.contains(document.activeElement) && document.activeElement !== menuButton) closeMenu();
-  });
-});
 function navigateToSection(target, hash) {
   cancelSectionNavigation();
-  closeMenu();
   dispatchEvent(new Event('bogema:navigate'));
   const start = window.scrollY;
-  const header = document.querySelector('.site-header');
-  const inset = getComputedStyle(header).position === 'sticky' ? header.getBoundingClientRect().height + 16 : 24;
-  const end = Math.max(0, Math.min(start + target.getBoundingClientRect().top - inset, document.documentElement.scrollHeight - innerHeight));
+  const inset = 24;
+  const end = hash === '#top' ? 0 : Math.max(0, Math.min(start + target.getBoundingClientRect().top - inset, document.documentElement.scrollHeight - innerHeight));
   const finish = () => {
     navigationFrame = 0;
     if (location.hash !== hash) history.pushState(null, '', hash);
-    target.setAttribute('tabindex', '-1');
-    target.focus({preventScroll:true});
+    const focusTarget = hash === '#top' ? document.querySelector('#hero-title') : target;
+    if (!focusTarget.hasAttribute('tabindex') && !focusTarget.matches('a[href]')) focusTarget.setAttribute('tabindex', '-1');
+    focusTarget.focus({preventScroll:true});
   };
-  if (Math.abs(end - start) < 2) { finish(); return; }
-  // Start the clock on the first painted frame, not before closing the menu.
-  // A delayed mobile frame must not skip the whole journey to its destination.
-  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const duration = reduced ? 220 : Math.min(1000, 600 + Math.abs(end - start) / 12);
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches || Math.abs(end - start) < 2) {
+    window.scrollTo(0, end);
+    finish();
+    return;
+  }
+  const duration = Math.min(1000, 600 + Math.abs(end - start) / 12);
   let previousFrame, elapsed = 0;
   const step = now => {
     if (previousFrame !== undefined) elapsed += Math.min(50, Math.max(0, now - previousFrame));
     previousFrame = now;
     const progress = Math.min(1, elapsed / duration);
-    const eased = reduced ? progress : (1 - Math.cos(Math.PI * progress)) / 2;
-    window.scrollTo(0, start + (end - start) * eased);
+    window.scrollTo(0, start + (end - start) * (1 - Math.cos(Math.PI * progress)) / 2);
     if (progress < 1) navigationFrame = requestAnimationFrame(step);
     else finish();
   };
   navigationFrame = requestAnimationFrame(step);
 }
-document.querySelectorAll('#menu-dialog nav a, .site-nav a, .desktop-hero-nav a, .header-request, .footer-up').forEach(link => link.addEventListener('click', event => {
-  if (!link.hash) return;
-  const target = document.querySelector(link.hash);
+document.querySelectorAll('.hero-mobile-request, .footer-up').forEach(link => link.addEventListener('click', event => {
+  // Preserve browser handling of separate tabs, copied URLs and cross-page links.
+  if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || link.target === '_blank') return;
+  if (link.origin !== location.origin || link.pathname !== location.pathname || link.search !== location.search || !link.hash) {
+    return;
+  }
+  const target = document.getElementById(decodeURIComponent(link.hash.slice(1)));
   if (!target) return;
   event.preventDefault();
   navigateToSection(target, link.hash);
@@ -95,7 +73,6 @@ for (const type of ['wheel', 'touchstart', 'pointerdown']) addEventListener(type
 document.addEventListener('keydown', event => {
   if (['ArrowUp','ArrowDown','PageUp','PageDown','Home','End',' '].includes(event.key)) cancelSectionNavigation();
 });
-matchMedia('(min-width: 1200px)').addEventListener('change', event => { if (event.matches) closeMenu(); });
 
 const videoDialog = document.querySelector('#video-dialog');
 const video = videoDialog.querySelector('video');

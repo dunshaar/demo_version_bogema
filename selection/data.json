@@ -1,0 +1,3943 @@
+{
+  "version": "bogema-repertoire-2026-10-14-unified-v1",
+  "sources": [
+    {
+      "path": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+      "sha256": "338a34a562194c23671214c6f5c9e289fb9143ed60bc27b10ad91e7d86be4b9b"
+    }
+  ],
+  "lineups": {
+    "all": {
+      "label": "Репертуар",
+      "positions": 211,
+      "songs": [
+        {
+          "id": "all-song-001",
+          "artist": "Л. Агутин",
+          "title": "Остров",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-001",
+              "artist": "Л. Агутин",
+              "title": "Остров",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 1
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-001",
+            "trio:trio-song-001"
+          ]
+        },
+        {
+          "id": "all-song-002",
+          "artist": "Л. Агутин",
+          "title": "Хоп хэй ла-ла-лэй",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-002",
+              "artist": "Л. Агутин",
+              "title": "Хоп хэй ла-ла-лэй",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 2
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-002",
+            "trio:trio-song-002"
+          ]
+        },
+        {
+          "id": "all-song-003",
+          "artist": "Л. Агутин",
+          "title": "На сиреневой Луне",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-003",
+              "artist": "Л. Агутин",
+              "title": "На сиреневой Луне",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 3
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-003",
+            "trio:trio-song-004"
+          ]
+        },
+        {
+          "id": "all-song-004",
+          "artist": "Л. Агутин",
+          "title": "Половина сердца",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-004",
+              "artist": "Л. Агутин",
+              "title": "Половина сердца",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 4
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-004",
+            "trio:trio-song-003"
+          ]
+        },
+        {
+          "id": "all-song-005",
+          "artist": "Л. Агутин",
+          "title": "Парень чернокожий",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-005",
+              "artist": "Л. Агутин",
+              "title": "Парень чернокожий",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 5
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-005"
+          ]
+        },
+        {
+          "id": "all-song-006",
+          "artist": "Л. Агутин",
+          "title": "Всё в твоих руках",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-006",
+              "artist": "Л. Агутин",
+              "title": "Всё в твоих руках",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 6
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-006"
+          ]
+        },
+        {
+          "id": "all-song-007",
+          "artist": "А-мега",
+          "title": "Лететь",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-007",
+              "artist": "А-мега",
+              "title": "Лететь",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 7
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-007",
+            "trio:trio-song-005"
+          ]
+        },
+        {
+          "id": "all-song-008",
+          "artist": "А-Студио",
+          "title": "Тик-так",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-008",
+              "artist": "А-Студио",
+              "title": "Тик-так",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 8
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-008"
+          ]
+        },
+        {
+          "id": "all-song-009",
+          "artist": "А-Студио",
+          "title": "Ещё люблю",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-009",
+              "artist": "А-Студио",
+              "title": "Ещё люблю",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 9
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-009"
+          ]
+        },
+        {
+          "id": "all-song-010",
+          "artist": "А-Студио",
+          "title": "Так же как все",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-010",
+              "artist": "А-Студио",
+              "title": "Так же как все",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 10
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-010"
+          ]
+        },
+        {
+          "id": "all-song-011",
+          "artist": "А-Студио",
+          "title": "Улетаю",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-011",
+              "artist": "А-Студио",
+              "title": "Улетаю",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 11
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-011"
+          ]
+        },
+        {
+          "id": "all-song-012",
+          "artist": "Анна Асти",
+          "title": "Царица",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-012",
+              "artist": "Анна Асти",
+              "title": "Царица",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 12
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-012"
+          ]
+        },
+        {
+          "id": "all-song-013",
+          "artist": "Анна Асти",
+          "title": "По барам",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-013",
+              "artist": "Анна Асти",
+              "title": "По барам",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 13
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-013"
+          ]
+        },
+        {
+          "id": "all-song-014",
+          "artist": "Агата Кристи",
+          "title": "На тебе как на войне",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-014",
+              "artist": "Агата Кристи",
+              "title": "На тебе как на войне",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 14
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-014",
+            "trio:trio-song-006"
+          ]
+        },
+        {
+          "id": "all-song-015",
+          "artist": "Агата Кристи",
+          "title": "Сказочная тайга",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-015",
+              "artist": "Агата Кристи",
+              "title": "Сказочная тайга",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 15
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-015",
+            "trio:trio-song-007"
+          ]
+        },
+        {
+          "id": "all-song-016",
+          "artist": "И. Аллегрова",
+          "title": "Младший Лейтенант",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-016",
+              "artist": "И. Аллегрова",
+              "title": "Младший Лейтенант",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 16
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-016"
+          ]
+        },
+        {
+          "id": "all-song-017",
+          "artist": "И. Аллегрова",
+          "title": "С днём рождения",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-017",
+              "artist": "И. Аллегрова",
+              "title": "С днём рождения",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 17
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-017"
+          ]
+        },
+        {
+          "id": "all-song-018",
+          "artist": "И. Аллегрова",
+          "title": "Угонщица",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-018",
+              "artist": "И. Аллегрова",
+              "title": "Угонщица",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 18
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-018"
+          ]
+        },
+        {
+          "id": "all-song-019",
+          "artist": "Ю. Антонов",
+          "title": "Мечта сбывается",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-019",
+              "artist": "Ю. Антонов",
+              "title": "Мечта сбывается",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 19
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-019",
+            "trio:trio-song-008"
+          ]
+        },
+        {
+          "id": "all-song-020",
+          "artist": "Ю. Антонов",
+          "title": "Я вспоминаю (Летящей походкой)",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-020",
+              "artist": "Ю. Антонов",
+              "title": "Я вспоминаю (Летящей походкой)",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 20
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-020"
+          ]
+        },
+        {
+          "id": "all-song-021",
+          "artist": "Браво",
+          "title": "Вася",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-021",
+              "artist": "Браво",
+              "title": "Вася",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 21
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-021",
+            "trio:trio-song-009"
+          ]
+        },
+        {
+          "id": "all-song-022",
+          "artist": "Браво",
+          "title": "Дорога в облака",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-022",
+              "artist": "Браво",
+              "title": "Дорога в облака",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 22
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-022",
+            "trio:trio-song-010"
+          ]
+        },
+        {
+          "id": "all-song-023",
+          "artist": "Браво",
+          "title": "Любите, девушки",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-023",
+              "artist": "Браво",
+              "title": "Любите, девушки",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 23
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-023",
+            "trio:trio-song-011"
+          ]
+        },
+        {
+          "id": "all-song-024",
+          "artist": "Браво",
+          "title": "Московский бит",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-024",
+              "artist": "Браво",
+              "title": "Московский бит",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 24
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-024",
+            "trio:trio-song-012"
+          ]
+        },
+        {
+          "id": "all-song-025",
+          "artist": "Браво",
+          "title": "Ветер знает",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-025",
+              "artist": "Браво",
+              "title": "Ветер знает",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 25
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-025",
+            "trio:trio-song-017"
+          ]
+        },
+        {
+          "id": "all-song-026",
+          "artist": "Браво",
+          "title": "Оранжевый галстук",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-026",
+              "artist": "Браво",
+              "title": "Оранжевый галстук",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 26
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-026",
+            "trio:trio-song-013"
+          ]
+        },
+        {
+          "id": "all-song-027",
+          "artist": "Браво",
+          "title": "Как жаль",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-027",
+              "artist": "Браво",
+              "title": "Как жаль",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 27
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-027",
+            "trio:trio-song-014"
+          ]
+        },
+        {
+          "id": "all-song-028",
+          "artist": "Браво",
+          "title": "Я то, что надо",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-028",
+              "artist": "Браво",
+              "title": "Я то, что надо",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 28
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-028",
+            "trio:trio-song-015"
+          ]
+        },
+        {
+          "id": "all-song-029",
+          "artist": "Браво",
+          "title": "Ленинградский рок-н-ролл",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-029",
+              "artist": "Браво",
+              "title": "Ленинградский рок-н-ролл",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 29
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-029"
+          ]
+        },
+        {
+          "id": "all-song-030",
+          "artist": "Дима Билан",
+          "title": "Молния",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-030",
+              "artist": "Дима Билан",
+              "title": "Молния",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 30
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-030",
+            "trio:trio-song-019"
+          ]
+        },
+        {
+          "id": "all-song-031",
+          "artist": "Дима Билан",
+          "title": "Держи",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-031",
+              "artist": "Дима Билан",
+              "title": "Держи",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 31
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-031",
+            "trio:trio-song-018"
+          ]
+        },
+        {
+          "id": "all-song-032",
+          "artist": "Нина Бродская/Анна Асти",
+          "title": "Звенит январская вьюга",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-032",
+              "artist": "Нина Бродская/Анна Асти",
+              "title": "Звенит январская вьюга",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 32
+            },
+            {
+              "occurrenceId": "group-occurrence-211",
+              "artist": "Нина Бродская / Анна Асти",
+              "title": "Звенит январская вьюга",
+              "category": "Новогодние",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 211
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-032",
+            "trio:trio-song-020"
+          ]
+        },
+        {
+          "id": "all-song-033",
+          "artist": "Блестящие",
+          "title": "За 4 моря",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-033",
+              "artist": "Блестящие",
+              "title": "За 4 моря",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 33
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-033"
+          ]
+        },
+        {
+          "id": "all-song-034",
+          "artist": "Н. Ветлицкая / BearWolf",
+          "title": "Посмотри в глаза",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-034",
+              "artist": "Н. Ветлицкая / BearWolf",
+              "title": "Посмотри в глаза",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 34
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-034"
+          ]
+        },
+        {
+          "id": "all-song-035",
+          "artist": "ВИАгра",
+          "title": "Попытка №5",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-035",
+              "artist": "ВИАгра",
+              "title": "Попытка №5",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 35
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-035"
+          ]
+        },
+        {
+          "id": "all-song-036",
+          "artist": "ВИА «Весёлые ребята»",
+          "title": "Люди встречаются",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-036",
+              "artist": "ВИА «Весёлые ребята»",
+              "title": "Люди встречаются",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 36
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-036",
+            "trio:trio-song-021"
+          ]
+        },
+        {
+          "id": "all-song-037",
+          "artist": "А. Губин",
+          "title": "Ночь",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-037",
+              "artist": "А. Губин",
+              "title": "Ночь",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 37
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-037",
+            "trio:trio-song-022"
+          ]
+        },
+        {
+          "id": "all-song-038",
+          "artist": "А. Губин",
+          "title": "Девушки как звезды",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-038",
+              "artist": "А. Губин",
+              "title": "Девушки как звезды",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 38
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-038"
+          ]
+        },
+        {
+          "id": "all-song-039",
+          "artist": "Гости из будущего / Моя Мишель",
+          "title": "Зима в сердце",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-039",
+              "artist": "Гости из будущего / Моя Мишель",
+              "title": "Зима в сердце",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 39
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-039"
+          ]
+        },
+        {
+          "id": "all-song-040",
+          "artist": "Две Маши",
+          "title": "Босая",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-040",
+              "artist": "Две Маши",
+              "title": "Босая",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 40
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-040"
+          ]
+        },
+        {
+          "id": "all-song-041",
+          "artist": "Две Маши",
+          "title": "Мама, я танцую",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-041",
+              "artist": "Две Маши",
+              "title": "Мама, я танцую",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 41
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-041"
+          ]
+        },
+        {
+          "id": "all-song-042",
+          "artist": "Демо",
+          "title": "Солнышко",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-042",
+              "artist": "Демо",
+              "title": "Солнышко",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 42
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-042"
+          ]
+        },
+        {
+          "id": "all-song-043",
+          "artist": "Жуки",
+          "title": "Батарейка",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-043",
+              "artist": "Жуки",
+              "title": "Батарейка",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 43
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-043",
+            "trio:trio-song-023"
+          ]
+        },
+        {
+          "id": "all-song-044",
+          "artist": "Жуки",
+          "title": "Танкист",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-044",
+              "artist": "Жуки",
+              "title": "Танкист",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 44
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-044",
+            "trio:trio-song-024"
+          ]
+        },
+        {
+          "id": "all-song-045",
+          "artist": "Звери",
+          "title": "Районы-кварталы",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-045",
+              "artist": "Звери",
+              "title": "Районы-кварталы",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 45
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-045",
+            "trio:trio-song-025"
+          ]
+        },
+        {
+          "id": "all-song-046",
+          "artist": "Звери",
+          "title": "До скорой встречи",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-046",
+              "artist": "Звери",
+              "title": "До скорой встречи",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 46
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-046",
+            "trio:trio-song-026"
+          ]
+        },
+        {
+          "id": "all-song-047",
+          "artist": "Звери",
+          "title": "Такая сильная любовь",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-047",
+              "artist": "Звери",
+              "title": "Такая сильная любовь",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 47
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-047",
+            "trio:trio-song-027"
+          ]
+        },
+        {
+          "id": "all-song-048",
+          "artist": "Звери",
+          "title": "Летняя ночь (Девочки-мальчики)",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-048",
+              "artist": "Звери",
+              "title": "Летняя ночь (Девочки-мальчики)",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 48
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-048"
+          ]
+        },
+        {
+          "id": "all-song-049",
+          "artist": "Земляне",
+          "title": "Трава у дома",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-049",
+              "artist": "Земляне",
+              "title": "Трава у дома",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 49
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-049",
+            "trio:trio-song-029"
+          ]
+        },
+        {
+          "id": "all-song-050",
+          "artist": "Земфира",
+          "title": "Почему",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-050",
+              "artist": "Земфира",
+              "title": "Почему",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 50
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-050"
+          ]
+        },
+        {
+          "id": "all-song-051",
+          "artist": "Земфира",
+          "title": "Искала",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-051",
+              "artist": "Земфира",
+              "title": "Искала",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 51
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-051"
+          ]
+        },
+        {
+          "id": "all-song-052",
+          "artist": "Зиверт",
+          "title": "Beverly Hills",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-052",
+              "artist": "Зиверт",
+              "title": "Beverly Hills",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 52
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-052"
+          ]
+        },
+        {
+          "id": "all-song-053",
+          "artist": "Зиверт",
+          "title": "Life",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-053",
+              "artist": "Зиверт",
+              "title": "Life",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 53
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-053"
+          ]
+        },
+        {
+          "id": "all-song-054",
+          "artist": "Зиверт",
+          "title": "Wake Up",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-054",
+              "artist": "Зиверт",
+              "title": "Wake Up",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 54
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-054"
+          ]
+        },
+        {
+          "id": "all-song-055",
+          "artist": "Зиверт",
+          "title": "Паруса",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-055",
+              "artist": "Зиверт",
+              "title": "Паруса",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 55
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-055"
+          ]
+        },
+        {
+          "id": "all-song-056",
+          "artist": "Иванушки Int.",
+          "title": "Тополиный пух",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-056",
+              "artist": "Иванушки Int.",
+              "title": "Тополиный пух",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 56
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-056",
+            "trio:trio-song-030"
+          ]
+        },
+        {
+          "id": "all-song-057",
+          "artist": "Кино / Zdob Si Zdub",
+          "title": "Видели ночь",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-057",
+              "artist": "Кино / Zdob Si Zdub",
+              "title": "Видели ночь",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 57
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-057",
+            "trio:trio-song-031"
+          ]
+        },
+        {
+          "id": "all-song-058",
+          "artist": "Король и шут",
+          "title": "Лесник",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-058",
+              "artist": "Король и шут",
+              "title": "Лесник",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 58
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-058",
+            "trio:trio-song-032"
+          ]
+        },
+        {
+          "id": "all-song-059",
+          "artist": "Король и шут",
+          "title": "Кукла колдуна",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-059",
+              "artist": "Король и шут",
+              "title": "Кукла колдуна",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 59
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-059",
+            "trio:trio-song-033"
+          ]
+        },
+        {
+          "id": "all-song-060",
+          "artist": "Король и шут",
+          "title": "Прыгну со скалы",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-060",
+              "artist": "Король и шут",
+              "title": "Прыгну со скалы",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 60
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-060",
+            "trio:trio-song-034"
+          ]
+        },
+        {
+          "id": "all-song-061",
+          "artist": "Т. Куртукова",
+          "title": "Матушка",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-061",
+              "artist": "Т. Куртукова",
+              "title": "Матушка",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 61
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-061"
+          ]
+        },
+        {
+          "id": "all-song-062",
+          "artist": "Н. Кадышева",
+          "title": "Плывет веночек",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-062",
+              "artist": "Н. Кадышева",
+              "title": "Плывет веночек",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 62
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-062"
+          ]
+        },
+        {
+          "id": "all-song-063",
+          "artist": "Н. Кадышева",
+          "title": "Широка Река",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-063",
+              "artist": "Н. Кадышева",
+              "title": "Широка Река",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 63
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-063"
+          ]
+        },
+        {
+          "id": "all-song-064",
+          "artist": "И. Корнелюк",
+          "title": "Город, которого нет",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-064",
+              "artist": "И. Корнелюк",
+              "title": "Город, которого нет",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 64
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-064"
+          ]
+        },
+        {
+          "id": "all-song-065",
+          "artist": "И. Корнелюк",
+          "title": "Дожди",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-065",
+              "artist": "И. Корнелюк",
+              "title": "Дожди",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 65
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-065"
+          ]
+        },
+        {
+          "id": "all-song-066",
+          "artist": "В. Кузьмин",
+          "title": "Эй, красотка",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-066",
+              "artist": "В. Кузьмин",
+              "title": "Эй, красотка",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 66
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-066",
+            "trio:trio-song-035"
+          ]
+        },
+        {
+          "id": "all-song-067",
+          "artist": "В. Кузьмин",
+          "title": "Сказка в моей жизни",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-067",
+              "artist": "В. Кузьмин",
+              "title": "Сказка в моей жизни",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 67
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-067"
+          ]
+        },
+        {
+          "id": "all-song-068",
+          "artist": "Леприконсы",
+          "title": "Хали-гали паратрупер",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-068",
+              "artist": "Леприконсы",
+              "title": "Хали-гали паратрупер",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 68
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-068",
+            "trio:trio-song-036"
+          ]
+        },
+        {
+          "id": "all-song-069",
+          "artist": "Ляпис Трубецкой",
+          "title": "Ау",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-069",
+              "artist": "Ляпис Трубецкой",
+              "title": "Ау",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 69
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-069",
+            "trio:trio-song-037"
+          ]
+        },
+        {
+          "id": "all-song-070",
+          "artist": "Ленинград",
+          "title": "WWW",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-070",
+              "artist": "Ленинград",
+              "title": "WWW",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 70
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-070",
+            "trio:trio-song-038"
+          ]
+        },
+        {
+          "id": "all-song-071",
+          "artist": "Ленинград",
+          "title": "Рыба моей мечты",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-071",
+              "artist": "Ленинград",
+              "title": "Рыба моей мечты",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 71
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-071",
+            "trio:trio-song-039"
+          ]
+        },
+        {
+          "id": "all-song-072",
+          "artist": "Ленинград",
+          "title": "В Питере пить",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-072",
+              "artist": "Ленинград",
+              "title": "В Питере пить",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 72
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-072",
+            "trio:trio-song-040"
+          ]
+        },
+        {
+          "id": "all-song-073",
+          "artist": "Ленинград",
+          "title": "Экспонат",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-073",
+              "artist": "Ленинград",
+              "title": "Экспонат",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 73
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-073"
+          ]
+        },
+        {
+          "id": "all-song-074",
+          "artist": "В. Леонтьев",
+          "title": "Полёт на дельтаплане",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-074",
+              "artist": "В. Леонтьев",
+              "title": "Полёт на дельтаплане",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 74
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-074",
+            "trio:trio-song-041"
+          ]
+        },
+        {
+          "id": "all-song-075",
+          "artist": "Ласковый май",
+          "title": "Белые розы",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-075",
+              "artist": "Ласковый май",
+              "title": "Белые розы",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 75
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-075",
+            "trio:trio-song-042"
+          ]
+        },
+        {
+          "id": "all-song-076",
+          "artist": "Ласковый май",
+          "title": "Седая ночь",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-076",
+              "artist": "Ласковый май",
+              "title": "Седая ночь",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 76
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-076",
+            "trio:trio-song-043"
+          ]
+        },
+        {
+          "id": "all-song-077",
+          "artist": "Машина Времени",
+          "title": "За тех, кто в море",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-077",
+              "artist": "Машина Времени",
+              "title": "За тех, кто в море",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 77
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-077",
+            "trio:trio-song-044"
+          ]
+        },
+        {
+          "id": "all-song-078",
+          "artist": "В. Меладзе",
+          "title": "Текила-любовь",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-078",
+              "artist": "В. Меладзе",
+              "title": "Текила-любовь",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 78
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-078",
+            "trio:trio-song-046"
+          ]
+        },
+        {
+          "id": "all-song-079",
+          "artist": "В. Меладзе",
+          "title": "Салют, Вера",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-079",
+              "artist": "В. Меладзе",
+              "title": "Салют, Вера",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 79
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-079"
+          ]
+        },
+        {
+          "id": "all-song-080",
+          "artist": "М. Насыров",
+          "title": "Я это ты",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-080",
+              "artist": "М. Насыров",
+              "title": "Я это ты",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 80
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-080",
+            "trio:trio-song-047"
+          ]
+        },
+        {
+          "id": "all-song-081",
+          "artist": "Мумий Тролль",
+          "title": "Владивосток 2000",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-081",
+              "artist": "Мумий Тролль",
+              "title": "Владивосток 2000",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 81
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-081",
+            "trio:trio-song-048"
+          ]
+        },
+        {
+          "id": "all-song-082",
+          "artist": "Мумий Тролль",
+          "title": "Медведица",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-082",
+              "artist": "Мумий Тролль",
+              "title": "Медведица",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 82
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-082"
+          ]
+        },
+        {
+          "id": "all-song-083",
+          "artist": "Мираж",
+          "title": "Музыка нас связала",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-083",
+              "artist": "Мираж",
+              "title": "Музыка нас связала",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 83
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-083"
+          ]
+        },
+        {
+          "id": "all-song-084",
+          "artist": "Мистер Твистер",
+          "title": "У самого синего моря",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-084",
+              "artist": "Мистер Твистер",
+              "title": "У самого синего моря",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 84
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-084",
+            "trio:trio-song-045"
+          ]
+        },
+        {
+          "id": "all-song-085",
+          "artist": "Несчастный случай",
+          "title": "Что ты имела ввиду",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-085",
+              "artist": "Несчастный случай",
+              "title": "Что ты имела ввиду",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 85
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-085",
+            "trio:trio-song-049"
+          ]
+        },
+        {
+          "id": "all-song-086",
+          "artist": "Отпетые мошенники",
+          "title": "Люби меня, люби",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-086",
+              "artist": "Отпетые мошенники",
+              "title": "Люби меня, люби",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 86
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-086",
+            "trio:trio-song-050"
+          ]
+        },
+        {
+          "id": "all-song-087",
+          "artist": "Руки вверх",
+          "title": "Крошка моя",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-087",
+              "artist": "Руки вверх",
+              "title": "Крошка моя",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 87
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-087",
+            "trio:trio-song-051"
+          ]
+        },
+        {
+          "id": "all-song-088",
+          "artist": "Руки вверх",
+          "title": "Алёшка",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-088",
+              "artist": "Руки вверх",
+              "title": "Алёшка",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 88
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-088"
+          ]
+        },
+        {
+          "id": "all-song-089",
+          "artist": "Рок-острова",
+          "title": "Ничего не говори",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-089",
+              "artist": "Рок-острова",
+              "title": "Ничего не говори",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 89
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-089"
+          ]
+        },
+        {
+          "id": "all-song-090",
+          "artist": "Секрет / М. Леонидов",
+          "title": "Любовь на пятом этаже",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-090",
+              "artist": "Секрет / М. Леонидов",
+              "title": "Любовь на пятом этаже",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 90
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-090",
+            "trio:trio-song-053"
+          ]
+        },
+        {
+          "id": "all-song-091",
+          "artist": "Секрет / М. Леонидов",
+          "title": "Виденье",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-091",
+              "artist": "Секрет / М. Леонидов",
+              "title": "Виденье",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 91
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-091"
+          ]
+        },
+        {
+          "id": "all-song-092",
+          "artist": "Секрет / М. Леонидов",
+          "title": "Не дай ему уйти",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-092",
+              "artist": "Секрет / М. Леонидов",
+              "title": "Не дай ему уйти",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 92
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-092",
+            "trio:trio-song-054"
+          ]
+        },
+        {
+          "id": "all-song-093",
+          "artist": "Серебро",
+          "title": "Между нами любовь",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-093",
+              "artist": "Серебро",
+              "title": "Между нами любовь",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 93
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-093"
+          ]
+        },
+        {
+          "id": "all-song-094",
+          "artist": "Г. Сукачёв",
+          "title": "Моя бабушка курит трубку",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-094",
+              "artist": "Г. Сукачёв",
+              "title": "Моя бабушка курит трубку",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 94
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-094",
+            "trio:trio-song-055"
+          ]
+        },
+        {
+          "id": "all-song-095",
+          "artist": "Сплин",
+          "title": "Моё сердце",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-095",
+              "artist": "Сплин",
+              "title": "Моё сердце",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 95
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-095",
+            "trio:trio-song-056"
+          ]
+        },
+        {
+          "id": "all-song-096",
+          "artist": "А. Токарев",
+          "title": "Седьмой лепесток",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-096",
+              "artist": "А. Токарев",
+              "title": "Седьмой лепесток",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 96
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-096"
+          ]
+        },
+        {
+          "id": "all-song-097",
+          "artist": "Танцы минус",
+          "title": "Город-сказка",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-097",
+              "artist": "Танцы минус",
+              "title": "Город-сказка",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 97
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-097",
+            "trio:trio-song-057"
+          ]
+        },
+        {
+          "id": "all-song-098",
+          "artist": "Танцы минус",
+          "title": "10 капель",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-098",
+              "artist": "Танцы минус",
+              "title": "10 капель",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 98
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-098",
+            "trio:trio-song-058"
+          ]
+        },
+        {
+          "id": "all-song-099",
+          "artist": "Танцы минус",
+          "title": "Половинка",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-099",
+              "artist": "Танцы минус",
+              "title": "Половинка",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 99
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-099",
+            "trio:trio-song-059"
+          ]
+        },
+        {
+          "id": "all-song-100",
+          "artist": "Л. Чеботина",
+          "title": "Солнце Монако",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-100",
+              "artist": "Л. Чеботина",
+              "title": "Солнце Монако",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 100
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-100"
+          ]
+        },
+        {
+          "id": "all-song-101",
+          "artist": "А. Чумаков",
+          "title": "Счастье",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-101",
+              "artist": "А. Чумаков",
+              "title": "Счастье",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 101
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-101"
+          ]
+        },
+        {
+          "id": "all-song-102",
+          "artist": "А. Чумаков",
+          "title": "Тут и там",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-102",
+              "artist": "А. Чумаков",
+              "title": "Тут и там",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 102
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-102"
+          ]
+        },
+        {
+          "id": "all-song-103",
+          "artist": "Чайф",
+          "title": "17 лет",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-103",
+              "artist": "Чайф",
+              "title": "17 лет",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 103
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-103",
+            "trio:trio-song-060"
+          ]
+        },
+        {
+          "id": "all-song-104",
+          "artist": "Чайф",
+          "title": "Рок-н-ролл этой ночи",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-104",
+              "artist": "Чайф",
+              "title": "Рок-н-ролл этой ночи",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 104
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-104",
+            "trio:trio-song-061"
+          ]
+        },
+        {
+          "id": "all-song-105",
+          "artist": "Шура",
+          "title": "Отшумели летние дожди",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-105",
+              "artist": "Шура",
+              "title": "Отшумели летние дожди",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 105
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-105"
+          ]
+        },
+        {
+          "id": "all-song-106",
+          "artist": "Шура",
+          "title": "Ты не верь слезам",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-106",
+              "artist": "Шура",
+              "title": "Ты не верь слезам",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 106
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-106"
+          ]
+        },
+        {
+          "id": "all-song-107",
+          "artist": "Animal Jazz",
+          "title": "Три полоски",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-107",
+              "artist": "Animal Jazz",
+              "title": "Три полоски",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 107
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-107"
+          ]
+        },
+        {
+          "id": "all-song-108",
+          "artist": "IOWA",
+          "title": "Простая песня",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-108",
+              "artist": "IOWA",
+              "title": "Простая песня",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 108
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-108"
+          ]
+        },
+        {
+          "id": "all-song-109",
+          "artist": "IOWA",
+          "title": "Улыбайся",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-109",
+              "artist": "IOWA",
+              "title": "Улыбайся",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 109
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-109"
+          ]
+        },
+        {
+          "id": "all-song-110",
+          "artist": "IOWA",
+          "title": "Мама",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-110",
+              "artist": "IOWA",
+              "title": "Мама",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 110
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-110"
+          ]
+        },
+        {
+          "id": "all-song-111",
+          "artist": "Uma2rman",
+          "title": "Ума Турман (Я так ждала тебя, Вова)",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-111",
+              "artist": "Uma2rman",
+              "title": "Ума Турман (Я так ждала тебя, Вова)",
+              "category": "Русскоязычные",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 111
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-111",
+            "trio:trio-song-062"
+          ]
+        },
+        {
+          "id": "all-song-112",
+          "artist": "A-Ha",
+          "title": "Take On Me",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-112",
+              "artist": "A-Ha",
+              "title": "Take On Me",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 112
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-112",
+            "trio:trio-song-063"
+          ]
+        },
+        {
+          "id": "all-song-113",
+          "artist": "ABBA",
+          "title": "Gimme! Gimme! Gimme!",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-113",
+              "artist": "ABBA",
+              "title": "Gimme! Gimme! Gimme!",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 113
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-113"
+          ]
+        },
+        {
+          "id": "all-song-114",
+          "artist": "ABBA",
+          "title": "Dancing Queen",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-114",
+              "artist": "ABBA",
+              "title": "Dancing Queen",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 114
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-114"
+          ]
+        },
+        {
+          "id": "all-song-115",
+          "artist": "Ace of Bace",
+          "title": "All That She Wants",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-115",
+              "artist": "Ace of Bace",
+              "title": "All That She Wants",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 115
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-115"
+          ]
+        },
+        {
+          "id": "all-song-116",
+          "artist": "Ace of Bace",
+          "title": "Beautiful Life",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-116",
+              "artist": "Ace of Bace",
+              "title": "Beautiful Life",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 116
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-116"
+          ]
+        },
+        {
+          "id": "all-song-117",
+          "artist": "Black-Eyed Peas",
+          "title": "Let’s Get It Started",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-117",
+              "artist": "Black-Eyed Peas",
+              "title": "Let’s Get It Started",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 117
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-117",
+            "trio:trio-song-064"
+          ]
+        },
+        {
+          "id": "all-song-118",
+          "artist": "Miley Cyrus",
+          "title": "Flowers",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-118",
+              "artist": "Miley Cyrus",
+              "title": "Flowers",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 118
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-118"
+          ]
+        },
+        {
+          "id": "all-song-119",
+          "artist": "Dua Lipa",
+          "title": "Cold Heart (feat. Elton John)",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-119",
+              "artist": "Dua Lipa",
+              "title": "Cold Heart (feat. Elton John)",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 119
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-119"
+          ]
+        },
+        {
+          "id": "all-song-120",
+          "artist": "Dua Lipa",
+          "title": "Don’t Start Now",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-120",
+              "artist": "Dua Lipa",
+              "title": "Don’t Start Now",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 120
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-120"
+          ]
+        },
+        {
+          "id": "all-song-121",
+          "artist": "Dua Lipa",
+          "title": "Levitating",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-121",
+              "artist": "Dua Lipa",
+              "title": "Levitating",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 121
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-121"
+          ]
+        },
+        {
+          "id": "all-song-122",
+          "artist": "Eurythmics",
+          "title": "Sweet Dreams",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-122",
+              "artist": "Eurythmics",
+              "title": "Sweet Dreams",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 122
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-122"
+          ]
+        },
+        {
+          "id": "all-song-123",
+          "artist": "Alice Merton",
+          "title": "No Roots",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-123",
+              "artist": "Alice Merton",
+              "title": "No Roots",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 123
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-123"
+          ]
+        },
+        {
+          "id": "all-song-124",
+          "artist": "Daft Punk",
+          "title": "Get Lucky",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-124",
+              "artist": "Daft Punk",
+              "title": "Get Lucky",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 124
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-124",
+            "trio:trio-song-068"
+          ]
+        },
+        {
+          "id": "all-song-125",
+          "artist": "Gloria Gaynor",
+          "title": "I Will Survive",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-125",
+              "artist": "Gloria Gaynor",
+              "title": "I Will Survive",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 125
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-125",
+            "trio:trio-song-069"
+          ]
+        },
+        {
+          "id": "all-song-126",
+          "artist": "Chris Isaak",
+          "title": "Wicked Game",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-126",
+              "artist": "Chris Isaak",
+              "title": "Wicked Game",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 126
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-126",
+            "trio:trio-song-070"
+          ]
+        },
+        {
+          "id": "all-song-127",
+          "artist": "Michael Jackson",
+          "title": "Billy Jean",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-127",
+              "artist": "Michael Jackson",
+              "title": "Billy Jean",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 127
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-127",
+            "trio:trio-song-071"
+          ]
+        },
+        {
+          "id": "all-song-128",
+          "artist": "Michael Jackson",
+          "title": "Black or White",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-128",
+              "artist": "Michael Jackson",
+              "title": "Black or White",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 128
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-128",
+            "trio:trio-song-072"
+          ]
+        },
+        {
+          "id": "all-song-129",
+          "artist": "Juanes",
+          "title": "La Camisa Negra",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-129",
+              "artist": "Juanes",
+              "title": "La Camisa Negra",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 129
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-129",
+            "trio:trio-song-073"
+          ]
+        },
+        {
+          "id": "all-song-130",
+          "artist": "Jennifer Lopez",
+          "title": "Let’s Get Loud",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-130",
+              "artist": "Jennifer Lopez",
+              "title": "Let’s Get Loud",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 130
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-130"
+          ]
+        },
+        {
+          "id": "all-song-131",
+          "artist": "Lady Gaga",
+          "title": "Shallow",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-131",
+              "artist": "Lady Gaga",
+              "title": "Shallow",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 131
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-131"
+          ]
+        },
+        {
+          "id": "all-song-132",
+          "artist": "Los Lobos",
+          "title": "Cancion Del Mariachi (OST Desperado)",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-132",
+              "artist": "Los Lobos",
+              "title": "Cancion Del Mariachi (OST Desperado)",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 132
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-132"
+          ]
+        },
+        {
+          "id": "all-song-133",
+          "artist": "Bruno Mars",
+          "title": "Locked Out of Heaven",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-133",
+              "artist": "Bruno Mars",
+              "title": "Locked Out of Heaven",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 133
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-133",
+            "trio:trio-song-075"
+          ]
+        },
+        {
+          "id": "all-song-134",
+          "artist": "Bruno Mars",
+          "title": "Uptown Funk",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-134",
+              "artist": "Bruno Mars",
+              "title": "Uptown Funk",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 134
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-134"
+          ]
+        },
+        {
+          "id": "all-song-135",
+          "artist": "George Michael",
+          "title": "Careless Whisper",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-135",
+              "artist": "George Michael",
+              "title": "Careless Whisper",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 135
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-135",
+            "trio:trio-song-076"
+          ]
+        },
+        {
+          "id": "all-song-136",
+          "artist": "Ricky Martin",
+          "title": "Livin’ La Vida Loca",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-136",
+              "artist": "Ricky Martin",
+              "title": "Livin’ La Vida Loca",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 136
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-136",
+            "trio:trio-song-077"
+          ]
+        },
+        {
+          "id": "all-song-137",
+          "artist": "Maroon 5",
+          "title": "This Love",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-137",
+              "artist": "Maroon 5",
+              "title": "This Love",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 137
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-137",
+            "trio:trio-song-078"
+          ]
+        },
+        {
+          "id": "all-song-138",
+          "artist": "D. Parton / W.Houston",
+          "title": "I'll Always Love You",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-138",
+              "artist": "D. Parton / W.Houston",
+              "title": "I'll Always Love You",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 138
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-138"
+          ]
+        },
+        {
+          "id": "all-song-139",
+          "artist": "Sixpence None the Richer",
+          "title": "Kiss Me",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-139",
+              "artist": "Sixpence None the Richer",
+              "title": "Kiss Me",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 139
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-139"
+          ]
+        },
+        {
+          "id": "all-song-140",
+          "artist": "Sting",
+          "title": "Englishman In New York",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-140",
+              "artist": "Sting",
+              "title": "Englishman In New York",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 140
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-140",
+            "trio:trio-song-079"
+          ]
+        },
+        {
+          "id": "all-song-141",
+          "artist": "Smash Mouth",
+          "title": "I'm a Believer",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-141",
+              "artist": "Smash Mouth",
+              "title": "I'm a Believer",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 141
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-141",
+            "trio:trio-song-080"
+          ]
+        },
+        {
+          "id": "all-song-142",
+          "artist": "Smash Mouth",
+          "title": "All Star",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-142",
+              "artist": "Smash Mouth",
+              "title": "All Star",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 142
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-142",
+            "trio:trio-song-081"
+          ]
+        },
+        {
+          "id": "all-song-143",
+          "artist": "Shakira",
+          "title": "Whenever, Wherever",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-143",
+              "artist": "Shakira",
+              "title": "Whenever, Wherever",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 143
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-143"
+          ]
+        },
+        {
+          "id": "all-song-144",
+          "artist": "Shocking Blue",
+          "title": "Venus («Шизгара»)",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-144",
+              "artist": "Shocking Blue",
+              "title": "Venus («Шизгара»)",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 144
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-144"
+          ]
+        },
+        {
+          "id": "all-song-145",
+          "artist": "Ed Sheeran",
+          "title": "Perfect",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-145",
+              "artist": "Ed Sheeran",
+              "title": "Perfect",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 145
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-145",
+            "trio:trio-song-083"
+          ]
+        },
+        {
+          "id": "all-song-146",
+          "artist": "Ed Sheeran",
+          "title": "Shape of You",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-146",
+              "artist": "Ed Sheeran",
+              "title": "Shape of You",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 146
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-146",
+            "trio:trio-song-084"
+          ]
+        },
+        {
+          "id": "all-song-147",
+          "artist": "Adriano Celentano",
+          "title": "Amore No",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-147",
+              "artist": "Adriano Celentano",
+              "title": "Amore No",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 147
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-147",
+            "trio:trio-song-085"
+          ]
+        },
+        {
+          "id": "all-song-148",
+          "artist": "Patricia Kaas",
+          "title": "Mon Mec A Moi",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-148",
+              "artist": "Patricia Kaas",
+              "title": "Mon Mec A Moi",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 148
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-148",
+            "trio:trio-song-086"
+          ]
+        },
+        {
+          "id": "all-song-149",
+          "artist": "Zaz",
+          "title": "Je Veux",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-149",
+              "artist": "Zaz",
+              "title": "Je Veux",
+              "category": "Pop",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 149
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-149",
+            "trio:trio-song-087"
+          ]
+        },
+        {
+          "id": "all-song-150",
+          "artist": "Aerosmith",
+          "title": "I Don't Wanna Miss a Thing (OST «Армагеддон»)",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-150",
+              "artist": "Aerosmith",
+              "title": "I Don't Wanna Miss a Thing (OST «Армагеддон»)",
+              "category": "Rock",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 150
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-150"
+          ]
+        },
+        {
+          "id": "all-song-151",
+          "artist": "Aerosmith",
+          "title": "Cryin’",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-151",
+              "artist": "Aerosmith",
+              "title": "Cryin’",
+              "category": "Rock",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 151
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-151",
+            "trio:trio-song-097"
+          ]
+        },
+        {
+          "id": "all-song-152",
+          "artist": "AC/DC",
+          "title": "Highway to Hell",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-152",
+              "artist": "AC/DC",
+              "title": "Highway to Hell",
+              "category": "Rock",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 152
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-152",
+            "trio:trio-song-098"
+          ]
+        },
+        {
+          "id": "all-song-153",
+          "artist": "Bon Jovi",
+          "title": "It’s My Life",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-153",
+              "artist": "Bon Jovi",
+              "title": "It’s My Life",
+              "category": "Rock",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 153
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-153",
+            "trio:trio-song-099"
+          ]
+        },
+        {
+          "id": "all-song-154",
+          "artist": "Cranberries",
+          "title": "Zombie",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-154",
+              "artist": "Cranberries",
+              "title": "Zombie",
+              "category": "Rock",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 154
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-154",
+            "trio:trio-song-100"
+          ]
+        },
+        {
+          "id": "all-song-155",
+          "artist": "Creedence",
+          "title": "Who'll Stop the Rain",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-155",
+              "artist": "Creedence",
+              "title": "Who'll Stop the Rain",
+              "category": "Rock",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 155
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-155",
+            "trio:trio-song-101"
+          ]
+        },
+        {
+          "id": "all-song-156",
+          "artist": "Creedence",
+          "title": "Have You Ever Seen The Rain",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-156",
+              "artist": "Creedence",
+              "title": "Have You Ever Seen The Rain",
+              "category": "Rock",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 156
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-156",
+            "trio:trio-song-102"
+          ]
+        },
+        {
+          "id": "all-song-157",
+          "artist": "Depeche Mode",
+          "title": "Personal Jesus",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-157",
+              "artist": "Depeche Mode",
+              "title": "Personal Jesus",
+              "category": "Rock",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 157
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-157",
+            "trio:trio-song-103"
+          ]
+        },
+        {
+          "id": "all-song-158",
+          "artist": "Depeche Mode",
+          "title": "Enjoy the Silence",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-158",
+              "artist": "Depeche Mode",
+              "title": "Enjoy the Silence",
+              "category": "Rock",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 158
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-158",
+            "trio:trio-song-104"
+          ]
+        },
+        {
+          "id": "all-song-159",
+          "artist": "Eagles",
+          "title": "Hotel California",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-159",
+              "artist": "Eagles",
+              "title": "Hotel California",
+              "category": "Rock",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 159
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-159",
+            "trio:trio-song-105"
+          ]
+        },
+        {
+          "id": "all-song-160",
+          "artist": "Guns’n’Roses",
+          "title": "Knockin’ On Heaven’s Door",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-160",
+              "artist": "Guns’n’Roses",
+              "title": "Knockin’ On Heaven’s Door",
+              "category": "Rock",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 160
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-160",
+            "trio:trio-song-106"
+          ]
+        },
+        {
+          "id": "all-song-161",
+          "artist": "Guns’n’Roses",
+          "title": "Don’t Cry",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-161",
+              "artist": "Guns’n’Roses",
+              "title": "Don’t Cry",
+              "category": "Rock",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 161
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-161",
+            "trio:trio-song-107"
+          ]
+        },
+        {
+          "id": "all-song-162",
+          "artist": "Kiss",
+          "title": "I Was Born For Lovin' You",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-162",
+              "artist": "Kiss",
+              "title": "I Was Born For Lovin' You",
+              "category": "Rock",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 162
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-162",
+            "trio:trio-song-108"
+          ]
+        },
+        {
+          "id": "all-song-163",
+          "artist": "Lynyrd Skynyrd",
+          "title": "Sweet Home Alabama",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-163",
+              "artist": "Lynyrd Skynyrd",
+              "title": "Sweet Home Alabama",
+              "category": "Rock",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 163
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-163",
+            "trio:trio-song-109"
+          ]
+        },
+        {
+          "id": "all-song-164",
+          "artist": "Linkin Park",
+          "title": "Numb",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-164",
+              "artist": "Linkin Park",
+              "title": "Numb",
+              "category": "Rock",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 164
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-164",
+            "trio:trio-song-110"
+          ]
+        },
+        {
+          "id": "all-song-165",
+          "artist": "Metallica",
+          "title": "Nothing Else Matters",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-165",
+              "artist": "Metallica",
+              "title": "Nothing Else Matters",
+              "category": "Rock",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 165
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-165",
+            "trio:trio-song-111"
+          ]
+        },
+        {
+          "id": "all-song-166",
+          "artist": "Metallica",
+          "title": "Enter Sandman",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-166",
+              "artist": "Metallica",
+              "title": "Enter Sandman",
+              "category": "Rock",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 166
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-166",
+            "trio:trio-song-112"
+          ]
+        },
+        {
+          "id": "all-song-167",
+          "artist": "Nirvana",
+          "title": "Smells Like Teen Spirit",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-167",
+              "artist": "Nirvana",
+              "title": "Smells Like Teen Spirit",
+              "category": "Rock",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 167
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-167",
+            "trio:trio-song-113"
+          ]
+        },
+        {
+          "id": "all-song-168",
+          "artist": "Queen",
+          "title": "Crazy Little Thing Called Love",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-168",
+              "artist": "Queen",
+              "title": "Crazy Little Thing Called Love",
+              "category": "Rock",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 168
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-168",
+            "trio:trio-song-114"
+          ]
+        },
+        {
+          "id": "all-song-169",
+          "artist": "Radiohead",
+          "title": "Creep",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-169",
+              "artist": "Radiohead",
+              "title": "Creep",
+              "category": "Rock",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 169
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-169",
+            "trio:trio-song-115"
+          ]
+        },
+        {
+          "id": "all-song-170",
+          "artist": "Tito and Tarantula",
+          "title": "After Dark",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-170",
+              "artist": "Tito and Tarantula",
+              "title": "After Dark",
+              "category": "Rock",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 170
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-170",
+            "trio:trio-song-116"
+          ]
+        },
+        {
+          "id": "all-song-171",
+          "artist": "Bill Haley",
+          "title": "Rock Around the Clock",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-171",
+              "artist": "Bill Haley",
+              "title": "Rock Around the Clock",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 171
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-171",
+            "trio:trio-song-117"
+          ]
+        },
+        {
+          "id": "all-song-172",
+          "artist": "The Beatles",
+          "title": "I Saw Her Standing There",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-172",
+              "artist": "The Beatles",
+              "title": "I Saw Her Standing There",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 172
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-172",
+            "trio:trio-song-118"
+          ]
+        },
+        {
+          "id": "all-song-173",
+          "artist": "The Beatles",
+          "title": "Can’t Buy Me Love",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-173",
+              "artist": "The Beatles",
+              "title": "Can’t Buy Me Love",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 173
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-173",
+            "trio:trio-song-119"
+          ]
+        },
+        {
+          "id": "all-song-174",
+          "artist": "The Beatles",
+          "title": "Drive My Car",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-174",
+              "artist": "The Beatles",
+              "title": "Drive My Car",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 174
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-174",
+            "trio:trio-song-120"
+          ]
+        },
+        {
+          "id": "all-song-175",
+          "artist": "The Beatles",
+          "title": "Get Back",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-175",
+              "artist": "The Beatles",
+              "title": "Get Back",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 175
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-175",
+            "trio:trio-song-121"
+          ]
+        },
+        {
+          "id": "all-song-176",
+          "artist": "The Beatles",
+          "title": "Back In The USSR",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-176",
+              "artist": "The Beatles",
+              "title": "Back In The USSR",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 176
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-176",
+            "trio:trio-song-122"
+          ]
+        },
+        {
+          "id": "all-song-177",
+          "artist": "Eric Clapton",
+          "title": "Layla",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-177",
+              "artist": "Eric Clapton",
+              "title": "Layla",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 177
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-177",
+            "trio:trio-song-065"
+          ]
+        },
+        {
+          "id": "all-song-178",
+          "artist": "Eric Clapton",
+          "title": "Change the World",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-178",
+              "artist": "Eric Clapton",
+              "title": "Change the World",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 178
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-178",
+            "trio:trio-song-066"
+          ]
+        },
+        {
+          "id": "all-song-179",
+          "artist": "Chuck Berry",
+          "title": "Johnny B. Goode",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-179",
+              "artist": "Chuck Berry",
+              "title": "Johnny B. Goode",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 179
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-179",
+            "trio:trio-song-123"
+          ]
+        },
+        {
+          "id": "all-song-180",
+          "artist": "Chuck Berry",
+          "title": "You Never Can Tell",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-180",
+              "artist": "Chuck Berry",
+              "title": "You Never Can Tell",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 180
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-180",
+            "trio:trio-song-124"
+          ]
+        },
+        {
+          "id": "all-song-181",
+          "artist": "James Brown",
+          "title": "I Feel Good",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-181",
+              "artist": "James Brown",
+              "title": "I Feel Good",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 181
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-181",
+            "trio:trio-song-125"
+          ]
+        },
+        {
+          "id": "all-song-182",
+          "artist": "Ray Charles",
+          "title": "Hit the Road Jack",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-182",
+              "artist": "Ray Charles",
+              "title": "Hit the Road Jack",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 182
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-182",
+            "trio:trio-song-126"
+          ]
+        },
+        {
+          "id": "all-song-183",
+          "artist": "Ray Charles",
+          "title": "What I'd Say",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-183",
+              "artist": "Ray Charles",
+              "title": "What I'd Say",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 183
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-183",
+            "trio:trio-song-127"
+          ]
+        },
+        {
+          "id": "all-song-184",
+          "artist": "Ray Charles",
+          "title": "I Got a Woman",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-184",
+              "artist": "Ray Charles",
+              "title": "I Got a Woman",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 184
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-184",
+            "trio:trio-song-128"
+          ]
+        },
+        {
+          "id": "all-song-185",
+          "artist": "Ray Charles",
+          "title": "Hallelujah I Love Her So",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-185",
+              "artist": "Ray Charles",
+              "title": "Hallelujah I Love Her So",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 185
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-185",
+            "trio:trio-song-129"
+          ]
+        },
+        {
+          "id": "all-song-186",
+          "artist": "Nat King Cole",
+          "title": "Route 66",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-186",
+              "artist": "Nat King Cole",
+              "title": "Route 66",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 186
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-186",
+            "trio:trio-song-130"
+          ]
+        },
+        {
+          "id": "all-song-187",
+          "artist": "Chubby Checker",
+          "title": "Let’s Twist Again",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-187",
+              "artist": "Chubby Checker",
+              "title": "Let’s Twist Again",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 187
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-187",
+            "trio:trio-song-131"
+          ]
+        },
+        {
+          "id": "all-song-188",
+          "artist": "Jerry Lee Lewis",
+          "title": "Great Balls of Fire",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-188",
+              "artist": "Jerry Lee Lewis",
+              "title": "Great Balls of Fire",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 188
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-188",
+            "trio:trio-song-132"
+          ]
+        },
+        {
+          "id": "all-song-189",
+          "artist": "Dean Martin",
+          "title": "Sway",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-189",
+              "artist": "Dean Martin",
+              "title": "Sway",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 189
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-189",
+            "trio:trio-song-133"
+          ]
+        },
+        {
+          "id": "all-song-190",
+          "artist": "Roy Orbisson",
+          "title": "Pretty Woman",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-190",
+              "artist": "Roy Orbisson",
+              "title": "Pretty Woman",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 190
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-190",
+            "trio:trio-song-134"
+          ]
+        },
+        {
+          "id": "all-song-191",
+          "artist": "Elvis Presley",
+          "title": "Blue Suede Shoes",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-191",
+              "artist": "Elvis Presley",
+              "title": "Blue Suede Shoes",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 191
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-191",
+            "trio:trio-song-135"
+          ]
+        },
+        {
+          "id": "all-song-192",
+          "artist": "Elvis Presley",
+          "title": "A Little Less Conversation",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-192",
+              "artist": "Elvis Presley",
+              "title": "A Little Less Conversation",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 192
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-192",
+            "trio:trio-song-136"
+          ]
+        },
+        {
+          "id": "all-song-193",
+          "artist": "Elvis Presley",
+          "title": "Can’t Help Fallin’ In Love",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-193",
+              "artist": "Elvis Presley",
+              "title": "Can’t Help Fallin’ In Love",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 193
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-193",
+            "trio:trio-song-137"
+          ]
+        },
+        {
+          "id": "all-song-194",
+          "artist": "Del Shannon",
+          "title": "Runaway",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-194",
+              "artist": "Del Shannon",
+              "title": "Runaway",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 194
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-194",
+            "trio:trio-song-142"
+          ]
+        },
+        {
+          "id": "all-song-195",
+          "artist": "Brian Setzer & The Stray Cats",
+          "title": "Wanna Be Americano",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-195",
+              "artist": "Brian Setzer & The Stray Cats",
+              "title": "Wanna Be Americano",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 195
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-195",
+            "trio:trio-song-148"
+          ]
+        },
+        {
+          "id": "all-song-196",
+          "artist": "Brian Setzer & The Stray Cats",
+          "title": "Stray Cat Strut",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-196",
+              "artist": "Brian Setzer & The Stray Cats",
+              "title": "Stray Cat Strut",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 196
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-196",
+            "trio:trio-song-144"
+          ]
+        },
+        {
+          "id": "all-song-197",
+          "artist": "Brian Setzer & The Stray Cats",
+          "title": "Rock This Town",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-197",
+              "artist": "Brian Setzer & The Stray Cats",
+              "title": "Rock This Town",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 197
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-197",
+            "trio:trio-song-146"
+          ]
+        },
+        {
+          "id": "all-song-198",
+          "artist": "Brian Setzer & The Stray Cats",
+          "title": "Rumble in Brighton",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-198",
+              "artist": "Brian Setzer & The Stray Cats",
+              "title": "Rumble in Brighton",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 198
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-198",
+            "trio:trio-song-147"
+          ]
+        },
+        {
+          "id": "all-song-199",
+          "artist": "Brian Setzer & The Stray Cats",
+          "title": "Ubangi Stomp (OST «Жмурки»)",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-199",
+              "artist": "Brian Setzer & The Stray Cats",
+              "title": "Ubangi Stomp (OST «Жмурки»)",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 199
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-199"
+          ]
+        },
+        {
+          "id": "all-song-200",
+          "artist": "Richie Valens",
+          "title": "La Bamba",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-200",
+              "artist": "Richie Valens",
+              "title": "La Bamba",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 200
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-200",
+            "trio:trio-song-143"
+          ]
+        },
+        {
+          "id": "all-song-201",
+          "artist": "Stevie Wonder",
+          "title": "Isn’t She Lovely",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-201",
+              "artist": "Stevie Wonder",
+              "title": "Isn’t She Lovely",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 201
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-201",
+            "trio:trio-song-150"
+          ]
+        },
+        {
+          "id": "all-song-202",
+          "artist": "Stevie Wonder",
+          "title": "Superstition",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-202",
+              "artist": "Stevie Wonder",
+              "title": "Very Superstitious",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 202
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-202",
+            "trio:trio-song-151"
+          ]
+        },
+        {
+          "id": "all-song-203",
+          "artist": "Grover Washington",
+          "title": "Just The Two of Us",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-203",
+              "artist": "Grover Washington",
+              "title": "Just The Two of Us",
+              "category": "Rock’n’Roll / Blues / Jazz",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 203
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-203",
+            "trio:trio-song-152"
+          ]
+        },
+        {
+          "id": "all-song-204",
+          "artist": "Frank Sinatra",
+          "title": "Let it Snow",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-204",
+              "artist": "Frank Sinatra",
+              "title": "Let it Snow",
+              "category": "Новогодние",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 204
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-204",
+            "trio:trio-song-088"
+          ]
+        },
+        {
+          "id": "all-song-205",
+          "artist": "Bobby Helms",
+          "title": "Jingle Bell Rock",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-205",
+              "artist": "Bobby Helms",
+              "title": "Jingle Bell Rock",
+              "category": "Новогодние",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 205
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-205",
+            "trio:trio-song-089"
+          ]
+        },
+        {
+          "id": "all-song-206",
+          "artist": "Wham!",
+          "title": "Last Christmas",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-206",
+              "artist": "Wham!",
+              "title": "Last Christmas",
+              "category": "Новогодние",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 206
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-206",
+            "trio:trio-song-090"
+          ]
+        },
+        {
+          "id": "all-song-207",
+          "artist": "Elvis Presley",
+          "title": "Blue Christmas",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-207",
+              "artist": "Elvis Presley",
+              "title": "Blue Christmas",
+              "category": "Новогодние",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 207
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-207",
+            "trio:trio-song-091"
+          ]
+        },
+        {
+          "id": "all-song-208",
+          "artist": "Секрет",
+          "title": "Последний час декабря",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-208",
+              "artist": "Секрет",
+              "title": "Последний час декабря",
+              "category": "Новогодние",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 208
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-208",
+            "trio:trio-song-092"
+          ]
+        },
+        {
+          "id": "all-song-209",
+          "artist": "Ну, погоди!",
+          "title": "Расскажи Снегурочка",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-209",
+              "artist": "Ну, погоди!",
+              "title": "Расскажи Снегурочка",
+              "category": "Новогодние",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 209
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-209",
+            "trio:trio-song-093"
+          ]
+        },
+        {
+          "id": "all-song-210",
+          "artist": "М. Кристаллинская / Ж. Агузарова",
+          "title": "Снег идет",
+          "aliases": [
+            {
+              "occurrenceId": "group-occurrence-210",
+              "artist": "М. Кристаллинская / Ж. Агузарова",
+              "title": "Снег идет",
+              "category": "Новогодние",
+              "source": "05_Репертуар/Документы/Репертуар кавер-группы Богема.docx",
+              "source_order": 210
+            }
+          ],
+          "legacyKeys": [
+            "group:group-song-210",
+            "trio:trio-song-094"
+          ]
+        }
+      ]
+    }
+  }
+}
