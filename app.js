@@ -19,8 +19,18 @@ for (const dialog of dialogs) {
     if (trigger?.isConnected) trigger.focus({ preventScroll: true });
   });
 }
-// No header on the homepage; keep room above anchor targets.
-document.body.style.setProperty('--b-navigation-inset', '24px');
+const homeNav=document.querySelector('.home-nav');
+const sectionToggle=document.querySelector('.home-sections-toggle');
+const sectionMenu=document.querySelector('#home-sections');
+function updateNavigationInset(){document.body.style.setProperty('--b-navigation-inset',(homeNav.getBoundingClientRect().height+20)+'px');}
+new ResizeObserver(updateNavigationInset).observe(homeNav);updateNavigationInset();
+function closeSectionMenu(returnFocus=false){sectionMenu.hidden=true;sectionToggle.setAttribute('aria-expanded','false');if(returnFocus)sectionToggle.focus({preventScroll:true});}
+sectionToggle.addEventListener('click',()=>{const open=sectionMenu.hidden;sectionMenu.hidden=!open;sectionToggle.setAttribute('aria-expanded',String(open));});
+sectionToggle.addEventListener('keydown',event=>{if(event.key==='ArrowDown'){event.preventDefault();sectionMenu.hidden=false;sectionToggle.setAttribute('aria-expanded','true');sectionMenu.querySelector('a').focus();}});
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!sectionMenu.hidden){event.preventDefault();closeSectionMenu(true);}});
+document.addEventListener('click',event=>{if(!event.target.closest('.home-section-menu')&&!sectionMenu.hidden)closeSectionMenu();});
+document.addEventListener('focusin',event=>{if(!event.target.closest('.home-section-menu')&&!sectionMenu.hidden)closeSectionMenu();});
+sectionMenu.addEventListener('click',event=>{if(event.target.closest('a'))closeSectionMenu();});
 // Section links use one bounded animation; reduced motion is immediate.
 document.documentElement.style.scrollBehavior = 'auto';
 let navigationFrame = 0;
@@ -32,7 +42,7 @@ function navigateToSection(target, hash) {
   cancelSectionNavigation();
   dispatchEvent(new Event('bogema:navigate'));
   const start = window.scrollY;
-  const inset = 24;
+  const inset = homeNav.getBoundingClientRect().height + 20;
   const end = hash === '#top' ? 0 : Math.max(0, Math.min(start + target.getBoundingClientRect().top - inset, document.documentElement.scrollHeight - innerHeight));
   const finish = () => {
     navigationFrame = 0;
@@ -58,7 +68,7 @@ function navigateToSection(target, hash) {
   };
   navigationFrame = requestAnimationFrame(step);
 }
-document.querySelectorAll('.hero-mobile-request, .footer-up').forEach(link => link.addEventListener('click', event => {
+document.querySelectorAll('.home-nav a[href^="#"], .hero-mobile-request, .footer-up').forEach(link => link.addEventListener('click', event => {
   // Preserve browser handling of separate tabs, copied URLs and cross-page links.
   if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || link.target === '_blank') return;
   if (link.origin !== location.origin || link.pathname !== location.pathname || link.search !== location.search || !link.hash) {
@@ -82,9 +92,9 @@ const fallback = error.querySelector('.video-fallback');
 const playerStatus = document.querySelector('.bp-status');
 const videos = {
   promo: { title: 'Промо 2026', src: 'assets/promo.mp4', poster: 'assets/poster-promo-20261014.jpg' },
-  'live-2025': { title: 'LIVE 2025 · Группа Богема', src: 'assets/live-2025.mp4', poster: 'assets/poster-live-2025.jpg' },
-  'trio-live': { title: 'Live-запись · Богема', src: 'assets/trio-live.mp4', poster: 'assets/poster-trio-live.jpg' },
-  'summer-rain': { title: 'Вокалист-гитарист · Летний дождь', src: 'assets/summer-rain.mp4', poster: 'assets/poster-summer-rain.jpg' },
+  'live-2025': { title: 'Группа · LIVE 2025', src: 'assets/live-2025.mp4', poster: 'assets/poster-live-2025.jpg' },
+  'trio-live': { title: 'Камерное трио · Live', src: 'assets/trio-live.mp4', poster: 'assets/poster-trio-live.jpg' },
+  'summer-rain': { title: 'Сольный формат · Вокал и гитара', src: 'assets/summer-rain.mp4', poster: 'assets/poster-summer-rain.jpg' },
 };
 let videoRequest = 0;
 document.querySelectorAll('[data-video]').forEach(button => button.addEventListener('click', () => {

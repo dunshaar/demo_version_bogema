@@ -41,3 +41,10 @@
   .home-page .hero-image{--photo-base-height:clamp(340px,calc(100svh - 154px - var(--hero-content) * .187),660px);position:relative;grid-column:2;order:initial;aspect-ratio:auto;width:100%;height:var(--photo-base-height);background:transparent;overflow:visible;display:block}
   .home-page .hero-image img{position:absolute;right:0;bottom:-8px;width:auto;height:calc(min(var(--photo-base-height),(var(--hero-content) - 28px) * .75 * 957 / 1643) * 1.23);max-width:none;max-height:none;object-fit:contain;mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent),linear-gradient(transparent,#000 16%,#000 91%,transparent);mask-composite:intersect}
 }
+
+/* Keep the approved scale and lower edge; center the group instead of the right column. */
+@media(min-width:1024px){
+ .home-page .hero-composition{display:block;}
+ .home-page .hero-image{width:100%;}
+ .home-page .hero-image img{right:auto;left:50%;transform:translateX(-52.5%);}
+}
