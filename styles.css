@@ -57,7 +57,7 @@
 .repertoire-ribbon{overflow:hidden;width:100%;border-block:1px solid #10111022;mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
 .repertoire-ribbon-track{display:flex;width:max-content;align-items:stretch;transform:translate3d(0,0,0)}
 .repertoire-ribbon-song{position:relative;display:flex;flex-direction:column;justify-content:center;flex:none;min-width:280px;padding:24px 48px;white-space:nowrap}
-.repertoire-ribbon-song::after{content:'✦';position:absolute;right:-5px;top:50%;transform:translateY(-50%);font-size:11px;color:#9d8862}
+.repertoire-ribbon-song::after{content:'';position:absolute;right:-5px;top:50%;transform:translateY(-50%);width:11px;height:11px;background:center/contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%239d8862' d='M8 0c1 5 3 7 8 8-5 1-7 3-8 8-1-5-3-7-8-8 5-1 7-3 8-8Z'/%3E%3C/svg%3E")}
 .repertoire-ribbon-song strong{font-weight:500;font-size:23px;line-height:1.35;letter-spacing:-.6px}
 .repertoire-ribbon-song>span{font-size:11px;line-height:1.5;letter-spacing:.03em;color:#73766a;margin-top:5px}
 @media(max-width:1100px){.formats-layout{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:32px}.formats-list li{padding:20px 0;gap:16px}.formats-list h3{font-size:18px}}
@@ -77,3 +77,9 @@
  .repertoire-ribbon-song{min-width:220px;padding:20px 32px}
  .repertoire-ribbon-song strong{font-size:20px}.repertoire-ribbon-song>span{font-size:10px}
 }
+
+/* Vector UI glyphs remain monochrome on mobile platforms. */
+.ui-icon{display:inline-block;width:20px;height:20px;flex:none;vertical-align:middle}
+.footer-up{display:inline-flex;align-items:center;gap:8px}
+.footer-up .ui-icon,.video-fallback .ui-icon{width:16px;height:16px}
+.ensemble-key-plus{width:1em;height:1em}

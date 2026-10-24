@@ -196,3 +196,6 @@
   .rep-companion .rep-reset{grid-column:2;grid-row:2;width:44px;min-height:44px;margin:0;padding:0;align-self:center;justify-self:end}
   .rep-reset-icon{display:block;width:18px;height:18px}
 }
+
+/* Status glyphs use SVG paths instead of platform-dependent text symbols. */
+.rep-guide-symbol .rep-guide-icon{display:block;width:20px;height:20px}
