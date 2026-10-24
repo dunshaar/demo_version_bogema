@@ -22,18 +22,18 @@
   <link rel="stylesheet" href="forms.css?v=20261022-release">
   <link rel="stylesheet" href="motion.css?v=20261022-release">
   <link rel="stylesheet" href="repertoire.css?v=20261024-vector">
-  <script type="module" src="repertoire.js?v=20261024-direct-form"></script>
+  <script type="module" src="repertoire.js?v=20261024-reset-confirm"></script>
   <script src="forms.js?v=20261022-release" defer></script>
 <link rel="stylesheet" href="assets/bogema-design-system.css?v=20261022-release">
 <link rel="stylesheet" href="assets/bogema-navigation.css?v=20261022-release">
 <link rel="stylesheet" href="assets/bogema-catalog-controls.css?v=20261022-release">
-<link rel="stylesheet" href="client-finishing.css?v=20261024-direct-form">
+<link rel="stylesheet" href="client-finishing.css?v=20261024-reset-confirm">
 </head>
 <body class="repertoire-page" data-bogema-theme="light">
   <a class="rep-skip" href="#songs">К списку песен</a>
 <header class="wrap b-page-header" aria-label="Навигация">
     <a class="b-brand" href="https://dunshaar.github.io/demo_version_bogema/" target="_blank" rel="noopener" aria-label="Богема — основной сайт, откроется в новой вкладке"><img src="assets/logo-dark.svg" width="5776" height="1824" alt=""></a>
-    <a class="b-nav-action" href="https://dunshaar.github.io/demo_version_bogema/" target="_blank" rel="noopener"><span>На сайт «Богемы»</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 4h6v6m0-6L10 14M10 4H4v16h16v-6"/></svg><span class="b-nav-sr-only"> — откроется в новой вкладке</span></a>
+    <a class="b-nav-action rep-site-link" href="https://dunshaar.github.io/demo_version_bogema/" target="_blank" rel="noopener"><span>Сайт «Богемы»</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg><span class="b-nav-sr-only"> — откроется в новой вкладке</span></a>
   </header>
   <main>
     <section class="wrap rep-intro" aria-labelledby="page-title">
@@ -58,7 +58,7 @@
           <div class="rep-count-skip"><dt>Не надо</dt><dd id="count-skip">0</dd></div>
         </dl>
         <p class="rep-selected-total">Изменено: <span id="selected-total">0</span></p><a class="rep-primary rep-send-link" href="#wishes-form"><span>Отправить пожелания</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 4v16m-6-6 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <button type="button" class="rep-text-button rep-reset" id="reset-open" title="Сбросить отметки" disabled><span class="rep-reset-label">Сбросить отметки</span><svg class="rep-reset-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 9a8 8 0 1 1 .5 7M4 3v6h6" stroke-linecap="round" stroke-linejoin="round"/></svg></button><p id="reset-status" class="rep-sr-only" role="status"></p>
+        <button type="button" class="rep-text-button rep-reset" id="reset-open" title="Сбросить песни" aria-haspopup="dialog" aria-controls="reset-dialog" disabled><span class="rep-reset-label">Сбросить песни</span><svg class="rep-reset-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 9a8 8 0 1 1 .5 7M4 3v6h6" stroke-linecap="round" stroke-linejoin="round"/></svg></button><p id="reset-status" class="rep-sr-only" role="status"></p>
       </aside>
       <div class="rep-main-column">
     <section class="rep-catalog" id="songs" aria-labelledby="list-title">
@@ -295,5 +295,13 @@
       </div>
     </div>
   </main>
+<dialog class="rep-action-dialog" id="reset-dialog" aria-labelledby="reset-dialog-title" aria-describedby="reset-dialog-description">
+  <h2 id="reset-dialog-title">Сбросить песни?</h2>
+  <p id="reset-dialog-description">Все песни снова получат отметку «Можно».</p>
+  <form method="dialog" class="rep-dialog-actions">
+    <button type="submit" class="rep-secondary" value="cancel" autofocus>Отмена</button>
+    <button type="submit" class="rep-primary" id="reset-confirm" value="confirm">Сбросить песни</button>
+  </form>
+</dialog>
 </body>
 </html>

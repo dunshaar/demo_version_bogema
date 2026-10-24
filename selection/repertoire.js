@@ -56,10 +56,20 @@ document.addEventListener('click',event=>{
 });
 search.addEventListener('input',applyFilter);clear.addEventListener('click',()=>{search.value='';applyFilter();search.focus();});search.addEventListener('keydown',event=>{if(event.key==='Escape'){event.preventDefault();clear.click();}});marked.addEventListener('change',applyFilter);
 $('#client-categories').addEventListener('click',event=>{const button=event.target.closest('[data-category]');if(button){category=button.dataset.category;applyFilter();}});
-$('#reset-open').addEventListener('click',()=>{
- store.clearMarks();
- $('#reset-status').textContent='Изменения сброшены.';
- if($('#reset-open').disabled)search.focus({preventScroll:true});
+const resetDialog=$('#reset-dialog'),resetButton=$('#reset-open');
+resetButton.addEventListener('click',()=>{
+ if(controlsLocked()||resetButton.disabled)return;
+ resetDialog.returnValue='cancel';
+ document.body.classList.add('reset-dialog-open');
+ resetDialog.showModal();
+});
+resetDialog.addEventListener('close',()=>{
+ document.body.classList.remove('reset-dialog-open');
+ if(resetDialog.returnValue==='confirm'&&!controlsLocked()){
+  store.clearMarks();
+  $('#reset-status').textContent='Песни сброшены.';
+ }
+ (resetButton.disabled?search:resetButton).focus({preventScroll:true});
 });
 $('#retry-catalog').addEventListener('click',()=>{store.reloadCatalog();});
 try{const response=await fetch('catalog-categories.json');if(!response.ok)throw Error();categories=await response.json();const nav=$('#client-categories');for(const c of [{id:'',title:'Все категории'},...categories]){const button=make('button',c.title);button.type='button';button.dataset.category=c.id;button.setAttribute('aria-pressed',String(!c.id));nav.append(button);}}catch{$('#client-categories').hidden=true;}

@@ -3,7 +3,7 @@ html { scroll-padding-top:0;scroll-behavior:smooth; }
 .repertoire-page .rep-guide-values { gap:20px; }
 .repertoire-page .rep-guide-option p { font-size:13px; }
 .repertoire-page .rep-guide-foot { font-size:13px;max-width:760px; }
-.repertoire-page .rep-companion { position:sticky;top:24px;max-height:calc(100svh - 48px);overflow-y:auto;overscroll-behavior:contain;border-radius:0;box-shadow:none; }
+.repertoire-page .rep-companion { position:sticky;top:24px;max-height:calc(100svh - 48px);overflow-y:auto;overscroll-behavior:contain;border-radius:var(--b-radius-surface);box-shadow:none; }
 .repertoire-page .rep-companion-total strong { font-size:32px;letter-spacing:-.03em; }
 .repertoire-page .rep-counts dt { font-size:12px; }
 .repertoire-page .rep-counts dt:before { display:none; }
@@ -61,3 +61,10 @@ html { scroll-padding-top:0;scroll-behavior:smooth; }
 @media(max-width:1040px) {
  .repertoire-page :is(.rep-catalog,.rep-song-row,.rep-request,.rep-request-card,.rep-main-column button,.rep-main-column a,.rep-main-column input) { scroll-margin-top:calc(var(--rep-companion-height,114px) + 20px); }
 }
+
+/* The reset confirmation uses the existing light surface and control styles. */
+.repertoire-page.reset-dialog-open { overflow:hidden; }
+.repertoire-page .rep-action-dialog { padding:28px;border-radius:var(--b-radius-surface);box-shadow:none; }
+.repertoire-page .rep-action-dialog h2 { padding-right:0; }
+.repertoire-page .rep-site-link { gap:8px;padding-inline:18px; }
+.repertoire-page .rep-site-link svg { width:18px;height:18px; }
