@@ -2,7 +2,7 @@
 .repertoire-page .rep-guide-values { gap:20px; }
 .repertoire-page .rep-guide-option p { font-size:13px; }
 .repertoire-page .rep-guide-foot { font-size:13px;max-width:760px; }
-.repertoire-page .rep-companion { border-radius:0;box-shadow:none; }
+.repertoire-page .rep-companion { position:sticky;top:24px;max-height:calc(100svh - 48px);overflow-y:auto;overscroll-behavior:contain;border-radius:0;box-shadow:none; }
 .repertoire-page .rep-companion-total strong { font-size:32px;letter-spacing:-.03em; }
 .repertoire-page .rep-counts dt { font-size:12px; }
 .repertoire-page .rep-counts dt:before { display:none; }
@@ -38,13 +38,13 @@
 .repertoire-page .rep-request { padding-top:32px;margin-top:40px; }
 .repertoire-page .bf-fields { grid-template-columns:1fr; }
 .repertoire-page .bf-form .bf-primary { margin-top:8px; }
-.repertoire-page.rep-compact-viewport .rep-companion { position:static; }
+
 @media(max-width:1199px) and (min-width:1041px) { .repertoire-page .rep-song-row { grid-template-columns:1fr;gap:10px; }.repertoire-page .rep-song-choices { max-width:360px; } }
 @media(max-width:1040px) {
  .repertoire-page .rep-companion-heading { position:static;width:auto;height:auto;margin:0;overflow:visible;clip-path:none;white-space:normal;grid-column:1/-1; }
  .repertoire-page .rep-companion-heading>p:first-child { font-size:12px; }
  .repertoire-page .rep-companion-total strong { font-size:16px;letter-spacing:0; }
- .repertoire-page .rep-companion { padding:8px 12px;gap:4px 8px; }
+ .repertoire-page .rep-companion { top:0;max-height:calc(100svh - 16px);padding:8px 12px;gap:4px 8px; }
  .repertoire-page .rep-companion .rep-counts { grid-row:2; }
  .repertoire-page .rep-counts dt { font-size:11px; }
  .repertoire-page .rep-counts dd { font-size:16px; }
@@ -52,9 +52,8 @@
  .repertoire-page .rep-companion .rep-send-link { grid-column:1;grid-row:3;margin:0;min-height:44px; }
  .repertoire-page .rep-companion .rep-reset { grid-column:2;grid-row:3;width:44px;min-height:44px;justify-self:end; }
  .repertoire-page .rep-selected-total { display:none; }
- .repertoire-page.is-reviewing .rep-companion { position:static; }
  .repertoire-page .rep-review { scroll-margin-top:20px; }
- .repertoire-page.rep-compact-viewport .rep-companion { position:static; }
+
 }
 @media(max-width:809px) {
  .repertoire-page .rep-guide { padding-top:20px; }
@@ -64,7 +63,6 @@
  .repertoire-page .rep-status-choice { padding-inline:8px;font-size:12px; }
  .repertoire-page .rep-review h2 { font-size:28px; }
 }
-@media(max-height:600px) { .repertoire-page .rep-companion { position:static; } }
 
 @media(max-width:1040px) {
  .repertoire-page.is-reviewing .rep-companion .rep-reset { grid-column:1/-1;width:auto;justify-self:start;padding-inline:0; }
@@ -73,5 +71,5 @@
 }
 
 @media(max-width:1040px) {
- .repertoire-page:not(.is-reviewing):not(.rep-compact-viewport) .rep-main-column :is(button,a,input) { scroll-margin-top:calc(var(--rep-companion-height,114px) + 16px); }
+ .repertoire-page :is(.rep-catalog,.rep-song-row,.rep-request,.rep-request-card,.rep-review,.rep-main-column button,.rep-main-column a,.rep-main-column input) { scroll-margin-top:calc(var(--rep-companion-height,114px) + 20px); }
 }

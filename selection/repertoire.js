@@ -49,13 +49,13 @@ function refresh(value){
  $('#reset-open').disabled=controlsLocked()||!(snapshot.changedCount+snapshot.deprecated.length);
  if(reviewing)renderReview();applyFilter();renderDeprecated();syncOffsets();
 }
-function syncOffsets(){const panel=$('#repertoire-companion'),height=panel.getBoundingClientRect().height;document.documentElement.style.setProperty('--rep-companion-height',`${height}px`);document.body.classList.toggle('rep-compact-viewport',height>innerHeight*.35);}
+function syncOffsets(){const panel=$('#repertoire-companion'),height=panel.getBoundingClientRect().height;document.documentElement.style.setProperty('--rep-companion-height',`${height}px`);}
 new ResizeObserver(syncOffsets).observe($('#repertoire-companion'));addEventListener('resize',syncOffsets,{passive:true});
 // Native focus scrolling may put a row under the compact sticky summary.
 document.addEventListener('focusin',event=>{
  const target=event.target;if(!target.closest('.rep-main-column'))return;
  requestAnimationFrame(()=>{
-  if(document.activeElement!==target||reviewing||!matchMedia('(max-width:1040px)').matches)return;
+  if(document.activeElement!==target||!matchMedia('(max-width:1040px)').matches)return;
   const panel=$('#repertoire-companion');if(getComputedStyle(panel).position!=='sticky')return;
   const bounds=panel.getBoundingClientRect(),field=target.getBoundingClientRect();
   if(bounds.top<=1&&field.top<bounds.bottom+16)scrollBy({top:field.top-bounds.bottom-16,behavior:'instant'});
