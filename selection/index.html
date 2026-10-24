@@ -22,12 +22,12 @@
   <link rel="stylesheet" href="forms.css?v=20261022-release">
   <link rel="stylesheet" href="motion.css?v=20261022-release">
   <link rel="stylesheet" href="repertoire.css?v=20261024-vector">
-  <script type="module" src="repertoire.js?v=20261024-sticky-summary"></script>
+  <script type="module" src="repertoire.js?v=20261024-direct-form"></script>
   <script src="forms.js?v=20261022-release" defer></script>
 <link rel="stylesheet" href="assets/bogema-design-system.css?v=20261022-release">
 <link rel="stylesheet" href="assets/bogema-navigation.css?v=20261022-release">
 <link rel="stylesheet" href="assets/bogema-catalog-controls.css?v=20261022-release">
-<link rel="stylesheet" href="client-finishing.css?v=20261024-sticky-summary">
+<link rel="stylesheet" href="client-finishing.css?v=20261024-direct-form">
 </head>
 <body class="repertoire-page" data-bogema-theme="light">
   <a class="rep-skip" href="#songs">К списку песен</a>
@@ -57,7 +57,7 @@
           <div class="rep-count-maybe"><dt>Можно</dt><dd id="count-maybe">0</dd></div>
           <div class="rep-count-skip"><dt>Не надо</dt><dd id="count-skip">0</dd></div>
         </dl>
-        <p class="rep-selected-total">Изменено: <span id="selected-total">0</span></p><a class="rep-primary rep-send-link" href="#selection-review"><span>Проверить выбор</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 4v16m-6-6 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <p class="rep-selected-total">Изменено: <span id="selected-total">0</span></p><a class="rep-primary rep-send-link" href="#wishes-form"><span>Отправить пожелания</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 4v16m-6-6 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <button type="button" class="rep-text-button rep-reset" id="reset-open" title="Сбросить отметки" disabled><span class="rep-reset-label">Сбросить отметки</span><svg class="rep-reset-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 9a8 8 0 1 1 .5 7M4 3v6h6" stroke-linecap="round" stroke-linejoin="round"/></svg></button><p id="reset-status" class="rep-sr-only" role="status"></p>
       </aside>
       <div class="rep-main-column">
@@ -289,9 +289,8 @@
 <li class="rep-song-row" data-song-id="all-song-210" data-program="all"><div class="rep-song-info"><span class="rep-song-number" aria-hidden="true">210</span><h3>Снег идет</h3><span class="rep-song-artist">М. Кристаллинская / Ж. Агузарова</span></div><div class="rep-choice-host"></div></li></ol></section>
       <!-- CATALOG:END -->
     </section>
-    <section class="rep-review" id="selection-review" aria-labelledby="review-title" hidden><button type="button" class="rep-secondary" id="back-to-catalog">Вернуться к песням</button><h2 id="review-title" tabindex="-1">Проверка выбора</h2><p>Можно отметить только важные предпочтения. Итоговую программу согласуем отдельно.</p><a class="rep-text-button" href="#wishes-form">К отправке пожеланий</a><p id="review-empty">Пока ничего не отмечено.</p><div id="review-groups"></div></section>
-    <section class="rep-request" aria-label="Отправить пожелания" hidden>
-      <div class="rep-request-card" id="wishes-form" data-request-form data-source="repertoire"><noscript>Для отправки пожеланий включите JavaScript в браузере</noscript></div>
+    <section class="rep-request" aria-label="Отправить пожелания">
+      <div class="rep-request-card" id="wishes-form" tabindex="-1" data-request-form data-source="repertoire"><noscript>Для отправки пожеланий включите JavaScript в браузере</noscript></div>
     </section>
       </div>
     </div>

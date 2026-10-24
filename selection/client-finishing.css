@@ -1,3 +1,4 @@
+html { scroll-padding-top:0;scroll-behavior:smooth; }
 .repertoire-page .rep-guide { padding-top:24px; }
 .repertoire-page .rep-guide-values { gap:20px; }
 .repertoire-page .rep-guide-option p { font-size:13px; }
@@ -29,12 +30,6 @@
 .repertoire-page .b-category-links button[aria-pressed="true"] { color:var(--b-text);text-decoration:underline; }
 .rep-marked-control { display:flex;align-items:center;gap:10px;min-height:44px;font:400 13px/1.5 var(--b-font);margin-bottom:16px;cursor:pointer; }
 .rep-marked-control input { width:18px;height:18px;accent-color:var(--b-primary); }
-.rep-review { scroll-margin-top:24px; }
-.rep-review h2 { font:500 32px/1.2 var(--b-font);letter-spacing:-.03em;margin:24px 0 12px; }
-.rep-review>p { font:400 14px/1.6 var(--b-font);color:var(--b-muted);margin-bottom:16px; }
-.rep-review-group { margin-top:28px; }
-.rep-review-group>h3 { font:600 16px/1.4 var(--b-font);padding-bottom:12px;border-bottom:1px solid var(--b-line); }
-.rep-review-list { list-style:none;padding:0;margin:0; }
 .repertoire-page .rep-request { padding-top:32px;margin-top:40px; }
 .repertoire-page .bf-fields { grid-template-columns:1fr; }
 .repertoire-page .bf-form .bf-primary { margin-top:8px; }
@@ -52,7 +47,6 @@
  .repertoire-page .rep-companion .rep-send-link { grid-column:1;grid-row:3;margin:0;min-height:44px; }
  .repertoire-page .rep-companion .rep-reset { grid-column:2;grid-row:3;width:44px;min-height:44px;justify-self:end; }
  .repertoire-page .rep-selected-total { display:none; }
- .repertoire-page .rep-review { scroll-margin-top:20px; }
 
 }
 @media(max-width:809px) {
@@ -61,15 +55,9 @@
  .repertoire-page .rep-guide-foot { margin-top:16px; }
  .repertoire-page .rep-song-row { grid-template-columns:1fr;gap:10px;padding:14px 0; }
  .repertoire-page .rep-status-choice { padding-inline:8px;font-size:12px; }
- .repertoire-page .rep-review h2 { font-size:28px; }
 }
 
-@media(max-width:1040px) {
- .repertoire-page.is-reviewing .rep-companion .rep-reset { grid-column:1/-1;width:auto;justify-self:start;padding-inline:0; }
- .repertoire-page.is-reviewing .rep-reset-label { position:static;width:auto;height:auto;margin:0;overflow:visible;clip-path:none;white-space:normal; }
- .repertoire-page.is-reviewing .rep-reset-icon { display:none; }
-}
 
 @media(max-width:1040px) {
- .repertoire-page :is(.rep-catalog,.rep-song-row,.rep-request,.rep-request-card,.rep-review,.rep-main-column button,.rep-main-column a,.rep-main-column input) { scroll-margin-top:calc(var(--rep-companion-height,114px) + 20px); }
+ .repertoire-page :is(.rep-catalog,.rep-song-row,.rep-request,.rep-request-card,.rep-main-column button,.rep-main-column a,.rep-main-column input) { scroll-margin-top:calc(var(--rep-companion-height,114px) + 20px); }
 }
